@@ -9,24 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
+        VStack{ //Stack뷰는 10개 정도에 view를 보여줄때 적합
             HStack {
-                Image(systemName: "goforward.10")
-                Image(systemName: "goforward.15")
-                Image(systemName: "goforward.30")
-            }
-            .font(.largeTitle)
-            .padding(16)
-            HStack(alignment: .bottom) {
-                Text("Q1 Sales")
-                    .font(.headline)
-                Spacer()
-                VStack (alignment: .leading) {
-                    Text("January")
-                    Text("February")
-                    Text("March")
+                Group {
+                    Image(systemName: "goforward.10")
+                    Image(systemName: "goforward.15")
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
                 }
-                Spacer()
+                Group {
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
+                    Image(systemName: "goforward.30")
+                }
             }
         }
     }
