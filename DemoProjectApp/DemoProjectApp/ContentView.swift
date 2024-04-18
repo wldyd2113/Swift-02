@@ -19,6 +19,7 @@ struct ContentView: View {
             Text(userName)
             Image(systemName: wifiEnabled ? "wifi" : "wifi.slash")
                 .font(.largeTitle)
+                .frame(height: 100)
         }
     }
 }
