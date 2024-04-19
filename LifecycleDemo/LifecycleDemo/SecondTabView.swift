@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct SecondTabView: View {
+    @State private var text: String = ""
+    
     var body: some View {
-        Text("View Two")
+        TextEditor(text: $text) //textarea랑 똑같음
+            .padding()
+            .onChange(of: text) {
+                print("onChange triggered \($0): \($1)")
+                
+            }
     }
 }
 
