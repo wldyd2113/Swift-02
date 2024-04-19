@@ -12,6 +12,7 @@
 		3B67F19E2BD25E99000B8F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B67F19D2BD25E99000B8F3A /* Assets.xcassets */; };
 		3B67F1A12BD25E99000B8F3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B67F1A02BD25E99000B8F3A /* Preview Assets.xcassets */; };
 		3B67F1A82BD25EBB000B8F3A /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67F1A72BD25EBA000B8F3A /* TimerData.swift */; };
+		3B67F1AA2BD2628A000B8F3A /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67F1A92BD2628A000B8F3A /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3B67F19D2BD25E99000B8F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B67F1A02BD25E99000B8F3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B67F1A72BD25EBA000B8F3A /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
+		3B67F1A92BD2628A000B8F3A /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				3B67F1992BD25E97000B8F3A /* ObservableDemoApp.swift */,
 				3B67F19B2BD25E97000B8F3A /* ContentView.swift */,
+				3B67F1A92BD2628A000B8F3A /* SecondView.swift */,
 				3B67F1A72BD25EBA000B8F3A /* TimerData.swift */,
 				3B67F19D2BD25E99000B8F3A /* Assets.xcassets */,
 				3B67F19F2BD25E99000B8F3A /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				3B67F19C2BD25E97000B8F3A /* ContentView.swift in Sources */,
 				3B67F19A2BD25E97000B8F3A /* ObservableDemoApp.swift in Sources */,
+				3B67F1AA2BD2628A000B8F3A /* SecondView.swift in Sources */,
 				3B67F1A82BD25EBB000B8F3A /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
