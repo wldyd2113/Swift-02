@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct User: Codable {
+//github API를 불러오는 구조체
+struct User: Codable { //D코드를 해주는 Codable 프로토코
     let login: String
     let avatar_url: URL
 }
 
+//github API를 불러오는 구조체
 struct Repository: Codable, Identifiable {
     let id: Int
     let name: String
