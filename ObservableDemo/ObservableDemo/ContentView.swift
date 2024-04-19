@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var timerData: TimerData = TimerData()//옵저버플 프로토콜을 상태를 관리하는 StateObject
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack {
+                Text("Timer count = \(timerData.timeCount)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+                Button(action: resetCount) {
+                    Text("Reset Counter")
+                }
+            }
         }
-        .padding()
+    }
+    func resetCount() {
+        timerData.resetCount()
     }
 }
 
