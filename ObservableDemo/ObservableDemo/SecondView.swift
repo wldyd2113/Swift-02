@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SecondView: View {
-    @StateObject var timerData: TimerData
+    @EnvironmentObject var timerData: TimerData
     var body: some View {
         Text("Second View")
             .font(.largeTitle)
@@ -18,5 +18,6 @@ struct SecondView: View {
 }
 
 #Preview {
-    SecondView(timerData: TimerData())
+    SecondView()
+        .environmentObject(TimerData())
 }
