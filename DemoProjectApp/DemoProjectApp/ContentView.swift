@@ -31,12 +31,34 @@ actor GithubService {
         return try JSONDecoder().decode([Repository].self, from: data)
     }
 }
+@MainActor
+class GithubViewModel: ObservableObject {
+    @Published  var user: User?
+    @Published  var repositories: [Repository] = []
+    @Published  var error: Error?
+    
+    let githubService = GithubService()
+    
+    func fetchdata(username: String) async {
+        Task {
+            do {
+                error = nil
+                async let fetchUser = githubService.fetchUser(username: username)
+                async let fetchRepositoris = githubService.fetchRepositories(username: username)
+                
+                user = try await fetchUser
+                repositories = try await fetchRepositoris
+            } catch {
+                self.error = error
+                print("Error: \(error)")
+            }
+        }
+    }
+}
 
 struct ContentView: View {
-    @State private var username = "jmbae"
-    @State private var user: User?
-    @State private var repositories: [Repository] = []
-    let githubService = GithubService()
+    @State private var username = "wldyd2113"
+    @StateObject private var viewModel = GithubViewModel()
     
     var body: some View {
         VStack {
@@ -44,20 +66,12 @@ struct ContentView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             Button("Fetch Data") {
-                Task {
-                    do {
-                        async let fetchUser = githubService.fetchUser(username: username)
-                        async let fetchRepositoris = githubService.fetchRepositories(username: username)
-                        
-                        user = try await fetchUser
-                        repositories = try await fetchRepositoris
-                    } catch {
-                        print("Error: \(error)")
-                    }
+                Task.detached {
+                    await viewModel.fetchdata(username: username)
                 }
             }
             
-            if let user = user {
+            if let user = viewModel.user {
                 AsyncImage(url: user.avatar_url) { image in
                     image.resizable()
                 } placeholder: {
@@ -70,7 +84,7 @@ struct ContentView: View {
                     .font(.title)
             }
             
-            List(repositories) { repo in
+            List(viewModel.repositories) { repo in
                 VStack(alignment: .leading) {
                     Text(repo.name)
                         .font(.headline)
@@ -78,26 +92,9 @@ struct ContentView: View {
                         .font(.subheadline)
                 }
             }
-            
-            Button("Fetch Data in Background") {
-                Task.detached {
-                    do {
-                        let service = GithubService()
-                        try await withThrowingTaskGroup(of: Void.self) { group in
-                            group.addTask {
-                                repositories = try await service.fetchRepositories(username: username)
-                            }
-                            group.addTask {
-                                user = try await service.fetchUser(username: username)
-                            }
-                            try await group.waitForAll()
-                        }
-                    } catch {
-                        DispatchQueue.main.async {
-                            print("\(error)")
-                        }
-                    }
-                }
+            if let error = viewModel.error {
+                Text("Error: \(error.localizedDescription)")
+                    .foregroundStyle(.red)
             }
         }
     }
