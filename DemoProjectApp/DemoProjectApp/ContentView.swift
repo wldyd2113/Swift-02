@@ -14,24 +14,12 @@ struct ContentView: View {
     @State private var userName = ""
     var body: some View {
         VStack {
-            TextField("Enter user name", text: $userName)
-            Text(userName)
-            Image(systemName: wifiEnabled ? "wifi" : "wifi.slash")
-                .font(.largeTitle)
 
-            WifiImageView(wifiEnabled2: $wifiEnabled)
         }
     }
 }
 
-struct WifiImageView: View {
-    @Binding var wifiEnabled2: Bool
-    var body: some View {
-        Toggle(isOn: $wifiEnabled2) {
-            Text("Enable Wi-Fi")
-        }
-    }
-}
+
 #Preview {
     ContentView()
 }
