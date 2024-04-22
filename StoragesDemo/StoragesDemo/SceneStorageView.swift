@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct SceneStorageView: View {
-    
-    @SceneStorage("mytext") private var editorText: String = "" //@SceneStorage():앱이꺼져도 저장하게 해줌
-    
+    @SceneStorage("mytext") private var editorText: String = "" // 앱이꺼져도 저장하게해줌
+
     var body: some View {
         TextEditor(text: $editorText)
             .padding(38)
