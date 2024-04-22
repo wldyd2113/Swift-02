@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  StorageDemo
+//  StoragesDemo
 //
 //  Created by 차지용 on 4/22/24.
 //
