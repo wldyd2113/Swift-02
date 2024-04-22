@@ -28,17 +28,23 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(tasks) { tasks in
+                ForEach(tasks) { task in
                     HStack {
-                        Text(tasks.title)
+                        Button(action: {
+                            toggleCompletion(for: task)
+                        }) {
+                            Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
+                        }
+                        
+                        Text(task.title)
                         Spacer()
-                        if tasks.completed {
+                        if task.completed {
                             Image(systemName: "checkmark")
                         }
                     }
                     .swipeActions(edge: .trailing) {
                         Button(role: .destructive) {
-                            deleteTask(tasks)
+                            deleteTask(task)
                         } label: {
                             Label("Delete", systemImage: "trash")
                         }
@@ -62,6 +68,9 @@ struct ContentView: View {
     }
     func deleteTask(_ task: Task) {
         modelContext.delete(task)
+    }
+    func toggleCompletion(for task: Task) {
+        task.completed.toggle()
     }
 }
 
