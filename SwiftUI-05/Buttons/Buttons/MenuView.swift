@@ -1,18 +1,31 @@
+////
+////  MenuView.swift
+////  Buttons
+////
+////  Created by 차지용 on 4/23/24.
+////
 //
-//  MenuView.swift
-//  Buttons
+//import SwiftUI
 //
-//  Created by 차지용 on 4/23/24.
+//struct MenuView: View {
+//    var body: some View {
+//        Menu("Choose a country") {
+//            Button("Canada") {
+//                print("Select Canada")
+//            }
+//            Button("Maxico") {
+//                print("Select Maxico")
+//            }
+//            Button("USA") {
+//                print("Select Canada")
+//            }
+//        }
+//        .navigationTitle("USA")
+//    }
+//}
 //
-
-import SwiftUI
-
-struct MenuView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    MenuView()
-}
+//#Preview {
+//    NavigationStack{
+//        MenuView()
+//    }
+//}
