@@ -12,18 +12,23 @@ struct BackgroundStyle: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .frame(width: UIScreen.main.bounds.width * 0.3) //bounds: 실측 공간(너비)
+            .frame(width: UIScreen.main.bounds.width * 0.3) //bounds: 실측 공간(너비), UIScreen:UIkit에서 가져온 화면 객체
             .foregroundStyle(.black)
             .padding()
             .background(bgColor)
             .cornerRadius(20) //테두리
     }
 }
+extension View {
+    func customBackgroundStyle(color: Color) -> some View {
+        modifier(BackgroundStyle(bgColor: color))
+    }
+}
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Perfect").modifier(BackgroundStyle(bgColor: .red))
+            Text("Perfect").customBackgroundStyle(color: .green)//.modifier(BackgroundStyle(bgColor: .red))
         }
         .padding()
     }
