@@ -20,6 +20,9 @@ struct ContentView: View {
                 NavigationLink("MenuViewButtons") {
                     MenuView()
                 }
+                NavigationLink("PasteButtonView") {
+                    PasteButtonView()
+                }
                 NavigationLink("Details about text") {
                     Text("Very long text that should not be deplayed in a single line because it is not good design")
                         .padding()
