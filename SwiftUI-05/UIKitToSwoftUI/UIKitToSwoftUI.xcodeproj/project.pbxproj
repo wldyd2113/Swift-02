@@ -11,6 +11,7 @@
 		3BFF372D2BD7A79E00C29C28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF372C2BD7A79E00C29C28 /* ContentView.swift */; };
 		3BFF372F2BD7A7A000C29C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFF372E2BD7A7A000C29C28 /* Assets.xcassets */; };
 		3BFF37322BD7A7A000C29C28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFF37312BD7A7A000C29C28 /* Preview Assets.xcassets */; };
+		3BFF37392BD7A7D500C29C28 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF37382BD7A7D500C29C28 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3BFF372C2BD7A79E00C29C28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BFF372E2BD7A7A000C29C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BFF37312BD7A7A000C29C28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BFF37382BD7A7D500C29C28 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3BFF372A2BD7A79E00C29C28 /* UIKitToSwoftUIApp.swift */,
 				3BFF372C2BD7A79E00C29C28 /* ContentView.swift */,
+				3BFF37382BD7A7D500C29C28 /* ActivityIndicator.swift */,
 				3BFF372E2BD7A7A000C29C28 /* Assets.xcassets */,
 				3BFF37302BD7A7A000C29C28 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BFF372D2BD7A79E00C29C28 /* ContentView.swift in Sources */,
+				3BFF37392BD7A7D500C29C28 /* ActivityIndicator.swift in Sources */,
 				3BFF372B2BD7A79E00C29C28 /* UIKitToSwoftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
