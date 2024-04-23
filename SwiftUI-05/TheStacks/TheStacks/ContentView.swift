@@ -18,16 +18,17 @@ struct ContentView: View {
             Text("VStack Item 3!")
             HStack { //가로
                 Text("HStack Item 1")
-                Divider()
-                    .background(.black)
-                Spacer()
+//                Divider()
+//                    .background(.black)
+//                Spacer()
                 Text("HStack Item 2")
-                Divider()
-                    .background(.black)
-                Spacer()
+//                Divider()
+//                    .background(.black)
+//                Spacer()
                 Text("HStack Item 3")
             }
             .background(.red)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
             ZStack { //겹치기
                 Text("ZStack Item 1")
                     .padding()
