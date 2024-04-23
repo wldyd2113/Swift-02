@@ -9,11 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(spacing: 44) {
+                NavigationLink("Buttons") {
+                    ButtonView()
+                }
+                NavigationLink("EditButtonView") {
+                    EditButtonView()
+                }
+                NavigationLink("MenuViewButtons") {
+                    MenuView()
+                }
+                NavigationLink("PasteButtonView") {
+                    PasteButtonView()
+                }
+                NavigationLink("Details about text") {
+                    Text("Very long text that should not be deplayed in a single line because it is not good design")
+                        .padding()
+                        .navigationTitle(Text("Detail"))
+                }
+            }
+            .navigationTitle(Text("Main View"))
         }
         .padding()
     }
