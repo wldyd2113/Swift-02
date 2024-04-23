@@ -21,9 +21,12 @@ struct PasteButtonView: View {
             .labelStyle(.iconOnly)
             .tint(.red)
         }
+        .navigationTitle("PasteButton View")
     }
 }
 
 #Preview {
-    PasteButtonView()
+    NavigationStack{
+        PasteButtonView()
+    }
 }
