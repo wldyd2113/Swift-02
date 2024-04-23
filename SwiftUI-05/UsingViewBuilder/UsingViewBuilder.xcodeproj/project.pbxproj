@@ -11,6 +11,7 @@
 		3BFF36F72BD7990A00C29C28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF36F62BD7990A00C29C28 /* ContentView.swift */; };
 		3BFF36F92BD7990B00C29C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFF36F82BD7990B00C29C28 /* Assets.xcassets */; };
 		3BFF36FC2BD7990B00C29C28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFF36FB2BD7990B00C29C28 /* Preview Assets.xcassets */; };
+		3BFF37032BD7994500C29C28 /* BlueCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF37022BD7994500C29C28 /* BlueCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3BFF36F62BD7990A00C29C28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BFF36F82BD7990B00C29C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BFF36FB2BD7990B00C29C28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BFF37022BD7994500C29C28 /* BlueCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3BFF36F42BD7990A00C29C28 /* UsingViewBuilderApp.swift */,
 				3BFF36F62BD7990A00C29C28 /* ContentView.swift */,
+				3BFF37022BD7994500C29C28 /* BlueCircle.swift */,
 				3BFF36F82BD7990B00C29C28 /* Assets.xcassets */,
 				3BFF36FA2BD7990B00C29C28 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFF37032BD7994500C29C28 /* BlueCircle.swift in Sources */,
 				3BFF36F72BD7990A00C29C28 /* ContentView.swift in Sources */,
 				3BFF36F52BD7990A00C29C28 /* UsingViewBuilderApp.swift in Sources */,
 			);
