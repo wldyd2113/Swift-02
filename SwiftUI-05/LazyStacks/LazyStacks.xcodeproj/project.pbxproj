@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B856A6E2BD8C163002D89E6 /* SearchListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A6D2BD8C163002D89E6 /* SearchListApp.swift */; };
-		3B856A702BD8C163002D89E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A6F2BD8C163002D89E6 /* ContentView.swift */; };
-		3B856A722BD8C165002D89E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B856A712BD8C165002D89E6 /* Assets.xcassets */; };
-		3B856A752BD8C165002D89E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B856A742BD8C165002D89E6 /* Preview Assets.xcassets */; };
-		3B856A7C2BD8C251002D89E6 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A7B2BD8C251002D89E6 /* Food.swift */; };
+		3B856A8B2BD8D1A2002D89E6 /* LazyStacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A8A2BD8D1A2002D89E6 /* LazyStacksApp.swift */; };
+		3B856A8D2BD8D1A2002D89E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A8C2BD8D1A2002D89E6 /* ContentView.swift */; };
+		3B856A8F2BD8D1A3002D89E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B856A8E2BD8D1A3002D89E6 /* Assets.xcassets */; };
+		3B856A922BD8D1A3002D89E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B856A912BD8D1A3002D89E6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B856A6A2BD8C163002D89E6 /* SearchList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B856A6D2BD8C163002D89E6 /* SearchListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListApp.swift; sourceTree = "<group>"; };
-		3B856A6F2BD8C163002D89E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3B856A712BD8C165002D89E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B856A742BD8C165002D89E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3B856A7B2BD8C251002D89E6 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		3B856A872BD8D1A2002D89E6 /* LazyStacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyStacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B856A8A2BD8D1A2002D89E6 /* LazyStacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStacksApp.swift; sourceTree = "<group>"; };
+		3B856A8C2BD8D1A2002D89E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B856A8E2BD8D1A3002D89E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B856A912BD8D1A3002D89E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B856A672BD8C163002D89E6 /* Frameworks */ = {
+		3B856A842BD8D1A2002D89E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,86 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B856A612BD8C163002D89E6 = {
+		3B856A7E2BD8D1A2002D89E6 = {
 			isa = PBXGroup;
 			children = (
-				3B856A6C2BD8C163002D89E6 /* SearchList */,
-				3B856A6B2BD8C163002D89E6 /* Products */,
+				3B856A892BD8D1A2002D89E6 /* LazyStacks */,
+				3B856A882BD8D1A2002D89E6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3B856A6B2BD8C163002D89E6 /* Products */ = {
+		3B856A882BD8D1A2002D89E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B856A6A2BD8C163002D89E6 /* SearchList.app */,
+				3B856A872BD8D1A2002D89E6 /* LazyStacks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B856A6C2BD8C163002D89E6 /* SearchList */ = {
+		3B856A892BD8D1A2002D89E6 /* LazyStacks */ = {
 			isa = PBXGroup;
 			children = (
-				3B856A6D2BD8C163002D89E6 /* SearchListApp.swift */,
-				3B856A6F2BD8C163002D89E6 /* ContentView.swift */,
-				3B856A7D2BD8D190002D89E6 /* New Group */,
-				3B856A7B2BD8C251002D89E6 /* Food.swift */,
-				3B856A712BD8C165002D89E6 /* Assets.xcassets */,
-				3B856A732BD8C165002D89E6 /* Preview Content */,
+				3B856A8A2BD8D1A2002D89E6 /* LazyStacksApp.swift */,
+				3B856A8C2BD8D1A2002D89E6 /* ContentView.swift */,
+				3B856A8E2BD8D1A3002D89E6 /* Assets.xcassets */,
+				3B856A902BD8D1A3002D89E6 /* Preview Content */,
 			);
-			path = SearchList;
+			path = LazyStacks;
 			sourceTree = "<group>";
 		};
-		3B856A732BD8C165002D89E6 /* Preview Content */ = {
+		3B856A902BD8D1A3002D89E6 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3B856A742BD8C165002D89E6 /* Preview Assets.xcassets */,
+				3B856A912BD8D1A3002D89E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3B856A7D2BD8D190002D89E6 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B856A692BD8C163002D89E6 /* SearchList */ = {
+		3B856A862BD8D1A2002D89E6 /* LazyStacks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B856A782BD8C165002D89E6 /* Build configuration list for PBXNativeTarget "SearchList" */;
+			buildConfigurationList = 3B856A952BD8D1A3002D89E6 /* Build configuration list for PBXNativeTarget "LazyStacks" */;
 			buildPhases = (
-				3B856A662BD8C163002D89E6 /* Sources */,
-				3B856A672BD8C163002D89E6 /* Frameworks */,
-				3B856A682BD8C163002D89E6 /* Resources */,
+				3B856A832BD8D1A2002D89E6 /* Sources */,
+				3B856A842BD8D1A2002D89E6 /* Frameworks */,
+				3B856A852BD8D1A2002D89E6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SearchList;
-			productName = SearchList;
-			productReference = 3B856A6A2BD8C163002D89E6 /* SearchList.app */;
+			name = LazyStacks;
+			productName = LazyStacks;
+			productReference = 3B856A872BD8D1A2002D89E6 /* LazyStacks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3B856A622BD8C163002D89E6 /* Project object */ = {
+		3B856A7F2BD8D1A2002D89E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					3B856A692BD8C163002D89E6 = {
+					3B856A862BD8D1A2002D89E6 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 3B856A652BD8C163002D89E6 /* Build configuration list for PBXProject "SearchList" */;
+			buildConfigurationList = 3B856A822BD8D1A2002D89E6 /* Build configuration list for PBXProject "LazyStacks" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,43 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 3B856A612BD8C163002D89E6;
-			productRefGroup = 3B856A6B2BD8C163002D89E6 /* Products */;
+			mainGroup = 3B856A7E2BD8D1A2002D89E6;
+			productRefGroup = 3B856A882BD8D1A2002D89E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B856A692BD8C163002D89E6 /* SearchList */,
+				3B856A862BD8D1A2002D89E6 /* LazyStacks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3B856A682BD8C163002D89E6 /* Resources */ = {
+		3B856A852BD8D1A2002D89E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B856A752BD8C165002D89E6 /* Preview Assets.xcassets in Resources */,
-				3B856A722BD8C165002D89E6 /* Assets.xcassets in Resources */,
+				3B856A922BD8D1A3002D89E6 /* Preview Assets.xcassets in Resources */,
+				3B856A8F2BD8D1A3002D89E6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B856A662BD8C163002D89E6 /* Sources */ = {
+		3B856A832BD8D1A2002D89E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B856A702BD8C163002D89E6 /* ContentView.swift in Sources */,
-				3B856A6E2BD8C163002D89E6 /* SearchListApp.swift in Sources */,
-				3B856A7C2BD8C251002D89E6 /* Food.swift in Sources */,
+				3B856A8D2BD8D1A2002D89E6 /* ContentView.swift in Sources */,
+				3B856A8B2BD8D1A2002D89E6 /* LazyStacksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3B856A762BD8C165002D89E6 /* Debug */ = {
+		3B856A932BD8D1A3002D89E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		3B856A772BD8C165002D89E6 /* Release */ = {
+		3B856A942BD8D1A3002D89E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -276,14 +264,14 @@
 			};
 			name = Release;
 		};
-		3B856A792BD8C165002D89E6 /* Debug */ = {
+		3B856A962BD8D1A3002D89E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SearchList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LazyStacks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -296,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.SearchList;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.LazyStacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,14 +292,14 @@
 			};
 			name = Debug;
 		};
-		3B856A7A2BD8C165002D89E6 /* Release */ = {
+		3B856A972BD8D1A3002D89E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SearchList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LazyStacks/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -324,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.SearchList;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.LazyStacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B856A652BD8C163002D89E6 /* Build configuration list for PBXProject "SearchList" */ = {
+		3B856A822BD8D1A2002D89E6 /* Build configuration list for PBXProject "LazyStacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B856A762BD8C165002D89E6 /* Debug */,
-				3B856A772BD8C165002D89E6 /* Release */,
+				3B856A932BD8D1A3002D89E6 /* Debug */,
+				3B856A942BD8D1A3002D89E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B856A782BD8C165002D89E6 /* Build configuration list for PBXNativeTarget "SearchList" */ = {
+		3B856A952BD8D1A3002D89E6 /* Build configuration list for PBXNativeTarget "LazyStacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B856A792BD8C165002D89E6 /* Debug */,
-				3B856A7A2BD8C165002D89E6 /* Release */,
+				3B856A962BD8D1A3002D89E6 /* Debug */,
+				3B856A972BD8D1A3002D89E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3B856A622BD8C163002D89E6 /* Project object */;
+	rootObject = 3B856A7F2BD8D1A2002D89E6 /* Project object */;
 }
