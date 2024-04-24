@@ -25,6 +25,7 @@ struct ContentView: View {
                 }
             }
             .frame(width: 50, height: 200)
+            .scrollBounceBehavior(.basedOnSize, axes:.vertical) //바운스
             
             ScrollView(.horizontal) {
                 HStack{
@@ -43,7 +44,7 @@ struct ContentView: View {
                 flashIndicators.toggle()
             }
         }
-        .scrollIndicators(.hidden, axes: [.vertical, .horizontal]) //스크롤바 없애줌
+        .scrollIndicators(.hidden, axes: [.vertical, .horizontal]) //스크롤바 없애주
     }
 }
 
