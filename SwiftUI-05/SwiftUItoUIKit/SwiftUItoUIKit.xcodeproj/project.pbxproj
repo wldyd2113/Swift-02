@@ -13,6 +13,7 @@
 		3B8569D42BD88466002D89E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3B8569D32BD88466002D89E6 /* Base */; };
 		3B8569D62BD88469002D89E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8569D52BD88469002D89E6 /* Assets.xcassets */; };
 		3B8569D92BD88469002D89E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3B8569D82BD88469002D89E6 /* Base */; };
+		3B8569E12BD888F7002D89E6 /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8569E02BD888F7002D89E6 /* Greetings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3B8569D52BD88469002D89E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8569D82BD88469002D89E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8569DA2BD88469002D89E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B8569E02BD888F7002D89E6 /* Greetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3B8569CC2BD88466002D89E6 /* AppDelegate.swift */,
 				3B8569CE2BD88466002D89E6 /* SceneDelegate.swift */,
 				3B8569D02BD88466002D89E6 /* ViewController.swift */,
+				3B8569E02BD888F7002D89E6 /* Greetings.swift */,
 				3B8569D22BD88466002D89E6 /* Main.storyboard */,
 				3B8569D52BD88469002D89E6 /* Assets.xcassets */,
 				3B8569D72BD88469002D89E6 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				3B8569D12BD88466002D89E6 /* ViewController.swift in Sources */,
 				3B8569CD2BD88466002D89E6 /* AppDelegate.swift in Sources */,
+				3B8569E12BD888F7002D89E6 /* Greetings.swift in Sources */,
 				3B8569CF2BD88466002D89E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
