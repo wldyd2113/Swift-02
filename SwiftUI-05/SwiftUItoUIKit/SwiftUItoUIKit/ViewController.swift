@@ -20,5 +20,10 @@ class ViewController: UIViewController {
     }
     
 
+    @IBSegueAction func goto(_ coder: NSCoder) -> UIViewController? {
+        let greetings = "Hello From UIKit"
+        let rootView = Greetings(textFromUIKit: greetings)
+        return UIHostingController(coder: coder, rootView: rootView)
+    }
 }
 
