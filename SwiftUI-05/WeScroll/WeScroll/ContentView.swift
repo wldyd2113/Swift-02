@@ -43,6 +43,7 @@ struct ContentView: View {
                 flashIndicators.toggle()
             }
         }
+        .scrollIndicators(.hidden, axes: [.vertical, .horizontal]) //스크롤바 없애줌
     }
 }
 
