@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B856A412BD8A89E002D89E6 /* EditableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A402BD8A89E002D89E6 /* EditableList.swift */; };
+		3B856A542BD8A8F5002D89E6 /* EditableListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A532BD8A8F5002D89E6 /* EditableListApp.swift */; };
+		3B856A562BD8A8F5002D89E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B856A552BD8A8F5002D89E6 /* ContentView.swift */; };
+		3B856A582BD8A8F7002D89E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B856A572BD8A8F7002D89E6 /* Assets.xcassets */; };
+		3B856A5B2BD8A8F7002D89E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B856A5A2BD8A8F7002D89E6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		3B856A3B2BD8A89E002D89E6 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		3B856A3D2BD8A89E002D89E6 /* libEditableList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEditableList.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B856A402BD8A89E002D89E6 /* EditableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableList.swift; sourceTree = "<group>"; };
+		3B856A502BD8A8F5002D89E6 /* EditableList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditableList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B856A532BD8A8F5002D89E6 /* EditableListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableListApp.swift; sourceTree = "<group>"; };
+		3B856A552BD8A8F5002D89E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B856A572BD8A8F7002D89E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B856A5A2BD8A8F7002D89E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B856A3A2BD8A89E002D89E6 /* Frameworks */ = {
+		3B856A4D2BD8A8F5002D89E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +32,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B856A342BD8A89E002D89E6 = {
+		3B856A472BD8A8F5002D89E6 = {
 			isa = PBXGroup;
 			children = (
-				3B856A3F2BD8A89E002D89E6 /* EditableList */,
-				3B856A3E2BD8A89E002D89E6 /* Products */,
+				3B856A522BD8A8F5002D89E6 /* EditableList */,
+				3B856A512BD8A8F5002D89E6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3B856A3E2BD8A89E002D89E6 /* Products */ = {
+		3B856A512BD8A8F5002D89E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B856A3D2BD8A89E002D89E6 /* libEditableList.a */,
+				3B856A502BD8A8F5002D89E6 /* EditableList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B856A3F2BD8A89E002D89E6 /* EditableList */ = {
+		3B856A522BD8A8F5002D89E6 /* EditableList */ = {
 			isa = PBXGroup;
 			children = (
-				3B856A402BD8A89E002D89E6 /* EditableList.swift */,
+				3B856A532BD8A8F5002D89E6 /* EditableListApp.swift */,
+				3B856A552BD8A8F5002D89E6 /* ContentView.swift */,
+				3B856A572BD8A8F7002D89E6 /* Assets.xcassets */,
+				3B856A592BD8A8F7002D89E6 /* Preview Content */,
 			);
 			path = EditableList;
+			sourceTree = "<group>";
+		};
+		3B856A592BD8A8F7002D89E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B856A5A2BD8A8F7002D89E6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B856A3C2BD8A89E002D89E6 /* EditableList */ = {
+		3B856A4F2BD8A8F5002D89E6 /* EditableList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B856A442BD8A89E002D89E6 /* Build configuration list for PBXNativeTarget "EditableList" */;
+			buildConfigurationList = 3B856A5E2BD8A8F7002D89E6 /* Build configuration list for PBXNativeTarget "EditableList" */;
 			buildPhases = (
-				3B856A392BD8A89E002D89E6 /* Sources */,
-				3B856A3A2BD8A89E002D89E6 /* Frameworks */,
-				3B856A3B2BD8A89E002D89E6 /* CopyFiles */,
+				3B856A4C2BD8A8F5002D89E6 /* Sources */,
+				3B856A4D2BD8A8F5002D89E6 /* Frameworks */,
+				3B856A4E2BD8A8F5002D89E6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -79,25 +84,25 @@
 			);
 			name = EditableList;
 			productName = EditableList;
-			productReference = 3B856A3D2BD8A89E002D89E6 /* libEditableList.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 3B856A502BD8A8F5002D89E6 /* EditableList.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3B856A352BD8A89E002D89E6 /* Project object */ = {
+		3B856A482BD8A8F5002D89E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					3B856A3C2BD8A89E002D89E6 = {
+					3B856A4F2BD8A8F5002D89E6 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = 3B856A382BD8A89E002D89E6 /* Build configuration list for PBXProject "EditableList" */;
+			buildConfigurationList = 3B856A4B2BD8A8F5002D89E6 /* Build configuration list for PBXProject "EditableList" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -105,29 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 3B856A342BD8A89E002D89E6;
-			productRefGroup = 3B856A3E2BD8A89E002D89E6 /* Products */;
+			mainGroup = 3B856A472BD8A8F5002D89E6;
+			productRefGroup = 3B856A512BD8A8F5002D89E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B856A3C2BD8A89E002D89E6 /* EditableList */,
+				3B856A4F2BD8A8F5002D89E6 /* EditableList */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3B856A4E2BD8A8F5002D89E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B856A5B2BD8A8F7002D89E6 /* Preview Assets.xcassets in Resources */,
+				3B856A582BD8A8F7002D89E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3B856A392BD8A89E002D89E6 /* Sources */ = {
+		3B856A4C2BD8A8F5002D89E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B856A412BD8A89E002D89E6 /* EditableList.swift in Sources */,
+				3B856A562BD8A8F5002D89E6 /* ContentView.swift in Sources */,
+				3B856A542BD8A8F5002D89E6 /* EditableListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3B856A422BD8A89E002D89E6 /* Debug */ = {
+		3B856A5C2BD8A8F7002D89E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		3B856A432BD8A89E002D89E6 /* Release */ = {
+		3B856A5D2BD8A8F7002D89E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,25 +264,57 @@
 			};
 			name = Release;
 		};
-		3B856A452BD8A89E002D89E6 /* Debug */ = {
+		3B856A5F2BD8A8F7002D89E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EditableList/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.EditableList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3B856A462BD8A89E002D89E6 /* Release */ = {
+		3B856A602BD8A8F7002D89E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EditableList/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.EditableList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B856A382BD8A89E002D89E6 /* Build configuration list for PBXProject "EditableList" */ = {
+		3B856A4B2BD8A8F5002D89E6 /* Build configuration list for PBXProject "EditableList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B856A422BD8A89E002D89E6 /* Debug */,
-				3B856A432BD8A89E002D89E6 /* Release */,
+				3B856A5C2BD8A8F7002D89E6 /* Debug */,
+				3B856A5D2BD8A8F7002D89E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B856A442BD8A89E002D89E6 /* Build configuration list for PBXNativeTarget "EditableList" */ = {
+		3B856A5E2BD8A8F7002D89E6 /* Build configuration list for PBXNativeTarget "EditableList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B856A452BD8A89E002D89E6 /* Debug */,
-				3B856A462BD8A89E002D89E6 /* Release */,
+				3B856A5F2BD8A8F7002D89E6 /* Debug */,
+				3B856A602BD8A8F7002D89E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3B856A352BD8A89E002D89E6 /* Project object */;
+	rootObject = 3B856A482BD8A8F5002D89E6 /* Project object */;
 }
