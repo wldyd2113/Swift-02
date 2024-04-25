@@ -11,6 +11,7 @@
 		3BE636752BD9DF6400DCC771 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE636742BD9DF6400DCC771 /* ContentView.swift */; };
 		3BE636772BD9DF6600DCC771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE636762BD9DF6600DCC771 /* Assets.xcassets */; };
 		3BE6367A2BD9DF6600DCC771 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE636792BD9DF6600DCC771 /* Preview Assets.xcassets */; };
+		3BE636812BD9DFBC00DCC771 /* CharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE636802BD9DFBC00DCC771 /* CharacterInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3BE636742BD9DF6400DCC771 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BE636762BD9DF6600DCC771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE636792BD9DF6600DCC771 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BE636802BD9DFBC00DCC771 /* CharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3BE636722BD9DF6400DCC771 /* ScrollViewReaderApp.swift */,
 				3BE636742BD9DF6400DCC771 /* ContentView.swift */,
+				3BE636802BD9DFBC00DCC771 /* CharacterInfo.swift */,
 				3BE636762BD9DF6600DCC771 /* Assets.xcassets */,
 				3BE636782BD9DF6600DCC771 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE636812BD9DFBC00DCC771 /* CharacterInfo.swift in Sources */,
 				3BE636752BD9DF6400DCC771 /* ContentView.swift in Sources */,
 				3BE636732BD9DF6400DCC771 /* ScrollViewReaderApp.swift in Sources */,
 			);
