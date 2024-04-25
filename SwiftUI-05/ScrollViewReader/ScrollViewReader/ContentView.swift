@@ -39,14 +39,40 @@ struct ContentView: View {
                 }
                 .scrollPosition(id: $scrolledId)
             }
-//            VStack {
-//                Text("ios 14+")
-//                    .foregroundStyle(.blue)
-//                    .font(.title)
-//                ScrollView {
-//                    
-//                }
-//            }
+            VStack {
+                Text("ios 14+")
+                    .foregroundStyle(.blue)
+                    .font(.title)
+                ScrollView {
+                    ScrollViewReader { proxy in
+                        Button("Go to letter Q") {
+                            proxy.scrollTo(16)
+                        }
+                        .padding()
+                        .background(.yellow)
+                        .tint(.blue)
+                        
+                        ForEach(CharacterInfo.charArray) { image in
+                            Image(systemName: image.name)
+                                .font(.largeTitle)
+                                .foregroundStyle(.yellow)
+                                .frame(width: 90, height: 90)
+                                .background(.blue)
+                                .padding()
+                        }
+                        Button("Go to letter A") {
+                            withAnimation {
+                                proxy.scrollTo(0, anchor: .top)
+                            }
+                        }
+                        .padding()
+                        .background(.yellow)
+                        .tint(.blue)
+                        
+                    }
+                    
+                }
+            }
         }
         .padding()
     }
