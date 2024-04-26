@@ -18,6 +18,7 @@ struct ContentView: View {
                     .cornerRadius(25)
             }
             .navigationTitle("Previews")
+            //멀티플레폼에서는 지원형식 헤줘야함
             .navigationBarTitleDisplayMode(.inline)
         }
         .padding()
