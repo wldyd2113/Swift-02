@@ -21,6 +21,7 @@ struct SognUpView: View {
     @State private var lessThenTwo = false
     @State private var username = ""
     @State private var password = ""
+    @State private var usernmaeError = ""
 
 
     var body: some View {
@@ -28,6 +29,11 @@ struct SognUpView: View {
             Form {
                 Section("Names") {
                     TextField("First Name", text: $firstName)
+                    if !usernmaeError.isEmpty {
+                        Text(usernmaeError)
+                            .font(.caption)
+                            .foregroundStyle(.red)
+                    }
                     TextField("Last Name", text: $lastName)
                 }
                 Section("Current Address") {
@@ -50,6 +56,7 @@ struct SognUpView: View {
                     SecureField("Create Password", text: $password)
                 }
                 Button("Submit") {
+                    usernmaeError = "Username을 입력하세요"
                     print("Form sumit action here")
                 }
             }
