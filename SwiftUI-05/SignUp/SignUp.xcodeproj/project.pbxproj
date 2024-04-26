@@ -11,6 +11,7 @@
 		3BDF625A2BDB8DC7001F1A21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF62592BDB8DC7001F1A21 /* ContentView.swift */; };
 		3BDF625C2BDB8DCA001F1A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDF625B2BDB8DCA001F1A21 /* Assets.xcassets */; };
 		3BDF625F2BDB8DCA001F1A21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDF625E2BDB8DCA001F1A21 /* Preview Assets.xcassets */; };
+		3BDF62682BDB8E17001F1A21 /* SognUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF62672BDB8E17001F1A21 /* SognUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3BDF62592BDB8DC7001F1A21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BDF625B2BDB8DCA001F1A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BDF625E2BDB8DCA001F1A21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BDF62672BDB8E17001F1A21 /* SognUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SognUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3BDF62572BDB8DC7001F1A21 /* SignUpApp.swift */,
 				3BDF62592BDB8DC7001F1A21 /* ContentView.swift */,
+				3BDF62672BDB8E17001F1A21 /* SognUpView.swift */,
 				3BDF625B2BDB8DCA001F1A21 /* Assets.xcassets */,
 				3BDF625D2BDB8DCA001F1A21 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDF62682BDB8E17001F1A21 /* SognUpView.swift in Sources */,
 				3BDF625A2BDB8DC7001F1A21 /* ContentView.swift in Sources */,
 				3BDF62582BDB8DC7001F1A21 /* SignUpApp.swift in Sources */,
 			);
