@@ -11,6 +11,7 @@
 		3BDF62222BDB4646001F1A21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF62212BDB4646001F1A21 /* ContentView.swift */; };
 		3BDF62242BDB4647001F1A21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDF62232BDB4647001F1A21 /* Assets.xcassets */; };
 		3BDF62282BDB4647001F1A21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDF62272BDB4647001F1A21 /* Preview Assets.xcassets */; };
+		3BDF622F2BDB471F001F1A21 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF622E2BDB471F001F1A21 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3BDF62232BDB4647001F1A21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BDF62252BDB4647001F1A21 /* PreviewingNavigationStack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreviewingNavigationStack.entitlements; sourceTree = "<group>"; };
 		3BDF62272BDB4647001F1A21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BDF622E2BDB471F001F1A21 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				3BDF621F2BDB4646001F1A21 /* PreviewingNavigationStackApp.swift */,
 				3BDF62212BDB4646001F1A21 /* ContentView.swift */,
+				3BDF622E2BDB471F001F1A21 /* SecondView.swift */,
 				3BDF62232BDB4647001F1A21 /* Assets.xcassets */,
 				3BDF62252BDB4647001F1A21 /* PreviewingNavigationStack.entitlements */,
 				3BDF62262BDB4647001F1A21 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDF622F2BDB471F001F1A21 /* SecondView.swift in Sources */,
 				3BDF62222BDB4646001F1A21 /* ContentView.swift in Sources */,
 				3BDF62202BDB4646001F1A21 /* PreviewingNavigationStackApp.swift in Sources */,
 			);
