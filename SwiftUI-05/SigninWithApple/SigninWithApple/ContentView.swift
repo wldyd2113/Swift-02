@@ -10,6 +10,22 @@ import AuthenticationServices
 struct ContentView: View {
     @State private var userName: String = ""
     @State private var userEmail: String = ""
+    
+    //앱에 저장하는 소규모 저장소
+    @AppStorage("storedName") private var storedName: String = "" {
+        didSet {
+            userName = storedName
+        }
+    }
+    
+    @AppStorage("storedEmail") private var storedEmail: String = "" {
+        didSet {
+            userEmail = storedEmail
+        }
+    }
+    
+    @AppStorage("userID") private var userID: String = ""
+    
     var body: some View {
         ZStack {
             Color.white
@@ -36,6 +52,9 @@ struct ContentView: View {
             else { return }
             
 //            TODO: storeData
+            storedName = credential.fullName?.givenName ?? ""
+            storedEmail = credential.email ?? ""
+            userID = credential.user
         case .failure(let error):
             print("Authorization failed: " + error.localizedDescription)
         }
