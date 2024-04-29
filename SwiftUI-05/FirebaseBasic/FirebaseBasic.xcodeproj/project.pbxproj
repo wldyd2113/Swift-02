@@ -15,6 +15,7 @@
 		3B9078C12BDF5A44005839DD /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9078C02BDF5A44005839DD /* GoogleSignIn */; };
 		3B9078C32BDF5A44005839DD /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9078C22BDF5A44005839DD /* GoogleSignInSwift */; };
 		3B9078C62BDF6B35005839DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B9078C52BDF6B35005839DD /* GoogleService-Info.plist */; };
+		3B9078C82BDF73DC005839DD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9078C72BDF73DC005839DD /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3B9078B52BDF5978005839DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B9078C42BDF5E27005839DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3B9078C52BDF6B35005839DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B9078C72BDF73DC005839DD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3B9078C42BDF5E27005839DD /* Info.plist */,
 				3B9078AE2BDF5977005839DD /* FirebaseBasicApp.swift */,
 				3B9078B02BDF5977005839DD /* ContentView.swift */,
+				3B9078C72BDF73DC005839DD /* AuthenticationViewModel.swift */,
 				3B9078B22BDF5978005839DD /* Assets.xcassets */,
 				3B9078C52BDF6B35005839DD /* GoogleService-Info.plist */,
 				3B9078B42BDF5978005839DD /* Preview Content */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9078C82BDF73DC005839DD /* AuthenticationViewModel.swift in Sources */,
 				3B9078B12BDF5977005839DD /* ContentView.swift in Sources */,
 				3B9078AF2BDF5977005839DD /* FirebaseBasicApp.swift in Sources */,
 			);

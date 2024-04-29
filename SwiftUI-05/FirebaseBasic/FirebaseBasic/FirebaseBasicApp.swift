@@ -10,10 +10,13 @@ import Firebase
 import GoogleSignIn
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    //FirebaseApp.configure()를 호출하여 Firbase를 초기화
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
         return true
     }
+    
+    //로그인 처리
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         GIDSignIn.sharedInstance.handle(url)
     }
