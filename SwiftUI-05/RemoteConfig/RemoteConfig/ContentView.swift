@@ -48,8 +48,8 @@ class RemoteConfigurateion {
             
         }
     }
-    
 }
+
 struct ContentView: View {
     private var config = RemoteConfigurateion()
     @RemoteConfigProperty(key: "screenType", fallback: nil) var screenType: String?
