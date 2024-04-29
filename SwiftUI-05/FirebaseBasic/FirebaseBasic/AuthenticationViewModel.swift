@@ -10,6 +10,7 @@ import FirebaseAuth
 import GoogleSignIn
 import FirebaseCore
 
+//사용자의 인증상태를 관리하고 로그인 및 로그아웃을 처리함
 extension UIApplication {
     static var currentRootViewController: UIViewController? {
         UIApplication.shared.connectedScenes
@@ -38,10 +39,18 @@ final class AuthenticationViewModel {
     var photoURL: URL? { authResult?.user.photoURL }
     
     func logout() {
-        
+        GIDSignIn.sharedInstance.signOut()
+        GIDSignIn.sharedInstance.disconnect()
+        try? Auth.auth().signOut()
+        state = .signedOut
     }
     func restorePreviousSignIn() {
-        
+        GIDSignIn.sharedInstance.restorePreviousSignIn() { user, error in
+            if let error { print("Error: \(error.localizedDescription)")}
+            Task {
+                await self.signIn(user: user)
+            }
+        }
     }
     
     func login() {
