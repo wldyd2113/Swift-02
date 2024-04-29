@@ -40,6 +40,29 @@ struct ContentView: View {
                 Text("Welcome\n\(userName), \(userEmail)")
                     .font(.headline)
             }
+                .task { await authorize() }
+        }
+        private authorize() async {
+            guard !userID.isEmpty else {
+                userName = ""
+                userEmail = ""
+                return
+            }
+            guard let credentilaState = try? await ASAuthorizationAppleIDProvider()
+                .credentialState(forUserID: userID) else {
+                userName = ""
+                userEmail
+                return
+            }
+            switch credentialState {
+            case .authorized:
+                userName = storedName
+                userEmail = storedEmail
+            }
+        default:
+            userName = ""
+            userEmail = ""
+            
         }
     }
     private func onRequest(_ request: ASAuthorizationAppleIDRequest) {
