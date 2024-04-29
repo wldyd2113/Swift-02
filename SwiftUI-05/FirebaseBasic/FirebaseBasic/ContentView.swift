@@ -24,6 +24,9 @@ struct ContentView: View {
                     .frame(width: 150, height: 30, alignment: .center)
             }
         }
+        .task {
+            authenticationViewModel.restorePreviousSignIn()
+        }
     }
 }
 
