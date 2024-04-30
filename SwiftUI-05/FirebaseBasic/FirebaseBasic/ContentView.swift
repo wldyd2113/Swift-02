@@ -9,8 +9,7 @@ import SwiftUI
 import GoogleSignInSwift
 
 struct ContentView: View {
-    @State var authenticationViewModel = AuthenticationViewModel()
-    
+    @StateObject var authenticationViewModel = AuthenticationViewModel()
     var body: some View {
         ZStack {
             Color.white.ignoresSafeArea(.all)

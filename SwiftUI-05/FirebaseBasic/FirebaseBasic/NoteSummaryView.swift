@@ -24,6 +24,6 @@ struct NoteSummaryView: View {
 
 #Preview {
     List(0..<5) { _ in
-        NoteSummaryView(note: Note.sample)
+        NoteSummaryView(note: Note.sampleWithLongBody)
     }
 }

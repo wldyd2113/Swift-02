@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct NoteListView: View {
     @State private var service: NoteService = NoteService()
     @State private var isNewNotePresented = false
@@ -24,17 +26,17 @@ struct NoteListView: View {
             .navigationTitle("FireNotes")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                        Button {
-                                isNewNotePresented.toggle()
-                            } label: {
-                                Image(systemName: "plus")
-                                    .font(.headline)
-                            }
-                        }
-                        .sheet(isPresented: $isNewNotePresented) {
-                            AddNoteView(service: service)
-                        }
-            task {
+                Button {
+                    isNewNotePresented.toggle()
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.headline)
+                }
+            }
+            .sheet(isPresented: $isNewNotePresented) {
+                AddNoteView(service: service)
+            }
+            .task {
                 service.fetch()
             }
         }

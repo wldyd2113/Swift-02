@@ -4,13 +4,11 @@
 //
 //  Created by 차지용 on 4/29/24.
 //
-
 import Foundation
 import FirebaseAuth
 import GoogleSignIn
 import FirebaseCore
 
-//사용자의 인증상태를 관리하고 로그인 및 로그아웃을 처리함
 extension UIApplication {
     static var currentRootViewController: UIViewController? {
         UIApplication.shared.connectedScenes
@@ -24,28 +22,30 @@ extension UIApplication {
     }
 }
 
-@Observable
-final class AuthenticationViewModel {
+@MainActor
+final class AuthenticationViewModel: ObservableObject {
     enum State {
         case busy
         case signedIn
         case signedOut
     }
     
-    var state: State = .busy
+    @Published var state: State = .busy
     private var authResult: AuthDataResult? = nil
-    var username: String { authResult?.user.displayName ?? ""}
-    var email: String { authResult?.user.email ?? ""}
+    var username: String { authResult?.user.displayName ?? "" }
+    var email: String { authResult?.user.email ?? "" }
     var photoURL: URL? { authResult?.user.photoURL }
     
     func logout() {
         GIDSignIn.sharedInstance.signOut()
         GIDSignIn.sharedInstance.disconnect()
         try? Auth.auth().signOut()
+        authResult = nil
         state = .signedOut
     }
+    
     func restorePreviousSignIn() {
-        GIDSignIn.sharedInstance.restorePreviousSignIn() { user, error in
+        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
             if let error { print("Error: \(error.localizedDescription)")}
             Task {
                 await self.signIn(user: user)
@@ -61,10 +61,11 @@ final class AuthenticationViewModel {
         }
         let configuration = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = configuration
-        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController, hint:nil) {
-            result, error in
+        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController, hint: nil) { result, error in
             if let error { print("Error: \(error.localizedDescription)")}
-            Task { await self.signIn(user:result?.user)}
+            Task {
+                await self.signIn(user: result?.user)
+            }
         }
     }
     
@@ -74,7 +75,8 @@ final class AuthenticationViewModel {
             return
         }
         
-        let credential = GoogleAuthProvider.credential(withIDToken: idToken.tokenString, accessToken: user.accessToken.tokenString)
+        let credential = GoogleAuthProvider.credential(withIDToken: idToken.tokenString,
+                                                       accessToken: user.accessToken.tokenString)
         
         do {
             authResult = try await Auth.auth().signIn(with: credential)
@@ -84,5 +86,5 @@ final class AuthenticationViewModel {
             print("Error: \(error.localizedDescription)")
         }
     }
-
+    
 }
