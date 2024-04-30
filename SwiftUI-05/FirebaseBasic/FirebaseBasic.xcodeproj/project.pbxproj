@@ -11,6 +11,7 @@
 		3B8015102BE06F3500E6ADCF /* NoteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80150F2BE06F3500E6ADCF /* NoteSummaryView.swift */; };
 		3B8015122BE06F4200E6ADCF /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8015112BE06F4200E6ADCF /* NoteDetailView.swift */; };
 		3B8015142BE072CC00E6ADCF /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8015132BE072CC00E6ADCF /* AddNoteView.swift */; };
+		3B8015162BE07C7E00E6ADCF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B8015152BE07C7E00E6ADCF /* GoogleService-Info.plist */; };
 		3B9078AF2BDF5977005839DD /* FirebaseBasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9078AE2BDF5977005839DD /* FirebaseBasicApp.swift */; };
 		3B9078B12BDF5977005839DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9078B02BDF5977005839DD /* ContentView.swift */; };
 		3B9078B32BDF5978005839DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9078B22BDF5978005839DD /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		3B9078BE2BDF59DE005839DD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9078BD2BDF59DE005839DD /* FirebaseAuth */; };
 		3B9078C12BDF5A44005839DD /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9078C02BDF5A44005839DD /* GoogleSignIn */; };
 		3B9078C32BDF5A44005839DD /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9078C22BDF5A44005839DD /* GoogleSignInSwift */; };
-		3B9078C62BDF6B35005839DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B9078C52BDF6B35005839DD /* GoogleService-Info.plist */; };
 		3B9078C82BDF73DC005839DD /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9078C72BDF73DC005839DD /* AuthenticationViewModel.swift */; };
 		3B9078CA2BDF81E2005839DD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9078C92BDF81E2005839DD /* ProfileView.swift */; };
 		3B9078CC2BDF8EB7005839DD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9078CB2BDF8EB7005839DD /* FirebaseFirestore */; };
@@ -32,13 +32,13 @@
 		3B80150F2BE06F3500E6ADCF /* NoteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSummaryView.swift; sourceTree = "<group>"; };
 		3B8015112BE06F4200E6ADCF /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		3B8015132BE072CC00E6ADCF /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		3B8015152BE07C7E00E6ADCF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B9078AB2BDF5977005839DD /* FirebaseBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9078AE2BDF5977005839DD /* FirebaseBasicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBasicApp.swift; sourceTree = "<group>"; };
 		3B9078B02BDF5977005839DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B9078B22BDF5978005839DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B9078B52BDF5978005839DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B9078C42BDF5E27005839DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		3B9078C52BDF6B35005839DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B9078C72BDF73DC005839DD /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		3B9078C92BDF81E2005839DD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3B9078CF2BDF8EF6005839DD /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				3B9078CF2BDF8EF6005839DD /* Note.swift */,
 				3B9078D12BDF9085005839DD /* NoteService.swift */,
 				3B9078B22BDF5978005839DD /* Assets.xcassets */,
-				3B9078C52BDF6B35005839DD /* GoogleService-Info.plist */,
+				3B8015152BE07C7E00E6ADCF /* GoogleService-Info.plist */,
 				3B9078B42BDF5978005839DD /* Preview Content */,
 			);
 			path = FirebaseBasic;
@@ -177,7 +177,7 @@
 			files = (
 				3B9078B62BDF5978005839DD /* Preview Assets.xcassets in Resources */,
 				3B9078B32BDF5978005839DD /* Assets.xcassets in Resources */,
-				3B9078C62BDF6B35005839DD /* GoogleService-Info.plist in Resources */,
+				3B8015162BE07C7E00E6ADCF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
