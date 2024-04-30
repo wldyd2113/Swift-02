@@ -11,7 +11,7 @@ import FirebaseFirestore
 class NoteService: ObservableObject {
     @Published var notes: [Note]
     private let dbCollection = Firestore.firestore().collection("notes")
-    private var listener: ListenerRegistration?
+    private var listener: ListenerRegistration? //서버로 부터 받아온 최신정보를 넘겨줌
     
     init(notes: [Note] = []) {
         self.notes = notes

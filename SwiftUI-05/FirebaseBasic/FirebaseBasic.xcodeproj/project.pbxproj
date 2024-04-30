@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B80150E2BE06DFA00E6ADCF /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80150D2BE06DFA00E6ADCF /* NoteListView.swift */; };
+		3B8015102BE06F3500E6ADCF /* NoteSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B80150F2BE06F3500E6ADCF /* NoteSummaryView.swift */; };
+		3B8015122BE06F4200E6ADCF /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8015112BE06F4200E6ADCF /* NoteDetailView.swift */; };
 		3B9078AF2BDF5977005839DD /* FirebaseBasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9078AE2BDF5977005839DD /* FirebaseBasicApp.swift */; };
 		3B9078B12BDF5977005839DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9078B02BDF5977005839DD /* ContentView.swift */; };
 		3B9078B32BDF5978005839DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9078B22BDF5978005839DD /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B80150D2BE06DFA00E6ADCF /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		3B80150F2BE06F3500E6ADCF /* NoteSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSummaryView.swift; sourceTree = "<group>"; };
+		3B8015112BE06F4200E6ADCF /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		3B9078AB2BDF5977005839DD /* FirebaseBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9078AE2BDF5977005839DD /* FirebaseBasicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBasicApp.swift; sourceTree = "<group>"; };
 		3B9078B02BDF5977005839DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 				3B9078C42BDF5E27005839DD /* Info.plist */,
 				3B9078AE2BDF5977005839DD /* FirebaseBasicApp.swift */,
 				3B9078B02BDF5977005839DD /* ContentView.swift */,
+				3B80150D2BE06DFA00E6ADCF /* NoteListView.swift */,
+				3B80150F2BE06F3500E6ADCF /* NoteSummaryView.swift */,
+				3B8015112BE06F4200E6ADCF /* NoteDetailView.swift */,
 				3B9078C92BDF81E2005839DD /* ProfileView.swift */,
 				3B9078C72BDF73DC005839DD /* AuthenticationViewModel.swift */,
 				3B9078CF2BDF8EF6005839DD /* Note.swift */,
@@ -176,12 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8015122BE06F4200E6ADCF /* NoteDetailView.swift in Sources */,
 				3B9078D02BDF8EF6005839DD /* Note.swift in Sources */,
 				3B9078CA2BDF81E2005839DD /* ProfileView.swift in Sources */,
 				3B9078C82BDF73DC005839DD /* AuthenticationViewModel.swift in Sources */,
 				3B9078B12BDF5977005839DD /* ContentView.swift in Sources */,
+				3B80150E2BE06DFA00E6ADCF /* NoteListView.swift in Sources */,
 				3B9078AF2BDF5977005839DD /* FirebaseBasicApp.swift in Sources */,
 				3B9078D22BDF9085005839DD /* NoteService.swift in Sources */,
+				3B8015102BE06F3500E6ADCF /* NoteSummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
