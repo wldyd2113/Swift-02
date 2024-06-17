@@ -7,13 +7,36 @@
 
 import SwiftUI
 
+private class PersonViewModel: ObservableObject {
+    @Published var firstName = ""
+    @Published var lastName = ""
+    
+    func save() {
+        print("Save to disk")
+    }
+}
+
 struct ContentView: View {
+    @State var dirty = false
+    @StateObject private var viewModel = PersonViewModel()
+    
     var body: some View {
-        List {
-            Text("Hello, world")
-            Text("Hello, Swift")
+        Form {
+            Section("\(self.dirty ? "* " : "")Input fields") {
+                TextField("First name", text: $viewModel.firstName)
+                    .onChange(of: viewModel.firstName) {
+                        self.dirty = true
+                    }
+                TextField("Last name", text: $viewModel.lastName)
+                    .onChange(of: viewModel.lastName) {
+                        self.dirty = true
+                    }
+            }
+            .onSubmit {
+                viewModel.save()
+                self.dirty = false
+            }
         }
-        .listStyle(.plain)
     }
 }
 
