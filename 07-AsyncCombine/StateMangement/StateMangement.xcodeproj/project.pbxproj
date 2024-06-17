@@ -14,6 +14,7 @@
 		3B412B202C1FF24700E345D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412B1F2C1FF24700E345D1 /* ContentView.swift */; };
 		3B412B222C1FF68600E345D1 /* EnvironmentObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412B212C1FF68600E345D1 /* EnvironmentObjectView.swift */; };
 		3B412B242C1FFC6100E345D1 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412B232C1FFC6100E345D1 /* SettingScreen.swift */; };
+		3B412B262C1FFEBE00E345D1 /* UserProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B412B252C1FFEBE00E345D1 /* UserProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3B412B1F2C1FF24700E345D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B412B212C1FF68600E345D1 /* EnvironmentObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectView.swift; sourceTree = "<group>"; };
 		3B412B232C1FFC6100E345D1 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
+		3B412B252C1FFEBE00E345D1 /* UserProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3B412B152C1FEF8800E345D1 /* Preview Content */,
 				3B412B1F2C1FF24700E345D1 /* ContentView.swift */,
 				3B412B212C1FF68600E345D1 /* EnvironmentObjectView.swift */,
+				3B412B252C1FFEBE00E345D1 /* UserProfileScreen.swift */,
 				3B412B232C1FFC6100E345D1 /* SettingScreen.swift */,
 			);
 			path = StateMangement;
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B412B262C1FFEBE00E345D1 /* UserProfileScreen.swift in Sources */,
 				3B412B242C1FFC6100E345D1 /* SettingScreen.swift in Sources */,
 				3B412B122C1FEF8600E345D1 /* ParentView.swift in Sources */,
 				3B412B222C1FF68600E345D1 /* EnvironmentObjectView.swift in Sources */,
