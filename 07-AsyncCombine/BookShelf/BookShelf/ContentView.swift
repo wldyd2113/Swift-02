@@ -8,25 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    var books: [Book]
+    
     var body: some View {
-        HStack(alignment: .top) {
-            Image("9781484285718-M")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 90)
-            VStack(alignment: .leading) {
-                Text("Asynchronous Promming with SwiftUI and Combine")
-                    .font(.headline)
-                Text("by peter Friese")
-                    .font(.subheadline)
-                Text("451 pages")
-                    .font(.subheadline)
-                
+        List(books, id: \.title) { book in
+            HStack(alignment: .top) {
+                Image(book.mediumCoverImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 90)
+                VStack(alignment: .leading) {
+                    Text(book.title)
+                        .font(.headline)
+                    Text("by \(book.author)")
+                        .font(.subheadline)
+                    Text("\(book.pages)")
+                        .font(.subheadline)
+                    
+                }
+                Spacer()
             }
         }
+        .listStyle(.plain)
     }
 }
 
-#Preview {
-    ContentView()
+#Preview(traits: .sizeThatFitsLayout) {
+    ContentView(books: Book.sampleBooks)
 }
