@@ -15,7 +15,11 @@ class SignUpFormViewModel: ObservableObject {
     @Published var usernameMessage: String = ""
     @Published var passwordMessage: String = ""
     @Published var isValid: Bool = false
-
+    
+    init() {
+        $username.map { $0.count >= 3 }.assign(to: &$isValid)
+        $username.map { $0.count >= 3 ? "" : "Username must be at least three characters!"}.assign(to: &$usernameMessage)
+    }
     
 }
 
