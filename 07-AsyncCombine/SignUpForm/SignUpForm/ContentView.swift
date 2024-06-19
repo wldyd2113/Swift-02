@@ -17,7 +17,6 @@ class SignUpFormViewModel: ObservableObject {
     @Published var passwordMessage: String = ""
     @Published var isValid: Bool = false
     
-    @Published var isUserNameAvailble: Bool = false
     
     private var authenticationService = AuthenticationService()
     private var cancellables: Set<AnyCancellable> = []
@@ -34,38 +33,43 @@ class SignUpFormViewModel: ObservableObject {
     }()
     
     private lazy var isFormValidPublisher: AnyPublisher<Bool, Never> = {
-        Publishers.CombineLatest3(isUsernameLengthValidPublisher, $isUserNameAvailble, isPasswordMatchingPublisher)
+        Publishers.CombineLatest3(isUsernameLengthValidPublisher, isUsernameAvailablePublisher, isPasswordMatchingPublisher)
             .map { $0 && $1 && $2 }
             .eraseToAnyPublisher()
     }()
     
-    func checkUserNameAvailable(_ userName: String) {
-        authenticationService.checkUserNameAvailableWithClosure(userName: userName) {
-            [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let isAvailable):
-                    self?.isUserNameAvailble = isAvailable
-                case .failure(let error):
-                    print("error \(error)")
-                    self?.isUserNameAvailble = false
-                }
-            }
-        }
-    }
-    
-    
-    
-    init() {
+    private lazy var isUsernameAvailablePublisher: AnyPublisher<Bool, Never> = {
         $username
-            .debounce(for: 0.5, scheduler: DispatchQueue.main)
-            .sink { [weak self] userName in
-                self?.checkUserNameAvailable(userName)
+            .debounce(for: 0.5, scheduler: RunLoop.main)
+            .removeDuplicates()
+            .flatMap { username -> AnyPublisher<Bool, Never> in
+                self.authenticationService.checkUserNameAvailableNaive(userName: username)
             }
-            .store(in: &cancellables)
+            .receive(on: DispatchQueue.main)
+            .share()
+            .print("share")
+            .eraseToAnyPublisher()
+    }()
+    //    func checkUserNameAvailable(_ userName: String) {
+    //        authenticationService.checkUserNameAvailableWithClosure(userName: userName) {
+    //            [weak self] result in
+    //            DispatchQueue.main.async {
+    //                switch result {
+    //                case .success(let isAvailable):
+    //                    self?.isUserNameAvailable = isAvailable
+    //                case .failure(let error):
+    //                    print("error: \(error)")
+    //                    self?.isUserNameAvailable = false
+    //                }
+    //            }
+    //        }
+    //    }
+
+    init() {
+
         
         isFormValidPublisher.assign(to: &$isValid)
-        Publishers.CombineLatest(isUsernameLengthValidPublisher, $isUserNameAvailble)
+        Publishers.CombineLatest(isUsernameLengthValidPublisher, isUsernameAvailablePublisher)
             .map { isUsernameLengthValid, isUserNameAvailble in
                 if !isUsernameLengthValid {
                     return "Username must be at least three characters!"
