@@ -98,7 +98,7 @@ struct ContentView: View {
         Form {
             Section(content:  {
                 TextField("Username", text: $viewModel.username)
-                    .textInputAutocapitalization(.none)
+                    .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()//자동완성
             },footer: {
                 Text(viewModel.usernameMessage)
