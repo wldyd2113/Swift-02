@@ -19,6 +19,8 @@
 		3B8615312C29294A00051125 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B8615332C29294E00051125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8615362C29294E00051125 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B86153D2C2929BF00051125 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		3B86153E2C292A7A00051125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		3B8615232C29294900051125 = {
 			isa = PBXGroup;
 			children = (
+				3B86153D2C2929BF00051125 /* Config.xcconfig */,
 				3B86152E2C29294A00051125 /* WorddBrowser */,
 				3B86152D2C29294A00051125 /* Products */,
 			);
@@ -51,6 +54,7 @@
 		3B86152E2C29294A00051125 /* WorddBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				3B86153E2C292A7A00051125 /* Info.plist */,
 				3B86152F2C29294A00051125 /* WorddBrowserApp.swift */,
 				3B8615312C29294A00051125 /* ContentView.swift */,
 				3B8615332C29294E00051125 /* Assets.xcassets */,
@@ -147,6 +151,7 @@
 /* Begin XCBuildConfiguration section */
 		3B8615382C29294E00051125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B86153D2C2929BF00051125 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -210,6 +215,7 @@
 		};
 		3B8615392C29294E00051125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B86153D2C2929BF00051125 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -274,6 +280,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorddBrowser/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorddBrowser/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorddBrowser/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WorddBrowser/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
