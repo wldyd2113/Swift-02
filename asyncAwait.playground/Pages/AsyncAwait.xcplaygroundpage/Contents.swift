@@ -36,21 +36,21 @@ func slice(_ ingredients: [String]) async -> [String] {
 func makeSandwich(bread: String, ingredients: [String], condiments: [String]) async -> String {
     sandwichMakerSays("Preparing your sandwich...")
 
-    let toasted = await toastBread(bread)
-    let sliced = await slice(ingredients)
+    async let toasted = await toastBread(bread)
+    async let sliced = await slice(ingredients)
 
-    sandwichMakerSays("Spreading \(condiments.joined(separator: ", and ")) om \(toasted)")
-    sandwichMakerSays("Layering \(sliced.joined(separator: ", "))")
+    sandwichMakerSays("Spreading \(condiments.joined(separator: ", and ")) om \(await toasted)")
+    sandwichMakerSays("Layering \(await sliced.joined(separator: ", "))")
     sandwichMakerSays("Putting lettuce on top")
     sandwichMakerSays("Putting another slice of bread on top")
 
-    return "\(ingredients.joined(separator: ", ")), \(condiments.joined(separator: ", ")) on \(toasted)"
+    return "\(ingredients.joined(separator: ", ")), \(condiments.joined(separator: ", ")) on \(await toasted)"
 
 }
 
 let clock = ContinuousClock()
 
-sandwichMakerSays("Hello to Cafe Async, where we execute your order in asynchronously.")
+sandwichMakerSays("Hello to Cafe Async, Let we execute your order in Parallel.")
 sandwichMakerSays("Please place your order.")
 
 Task {
