@@ -23,19 +23,28 @@ func toastBread(_ bread: String) async -> String {
     return "Crispy \(bread)"
 }
 
-func makeSandwitch(bread: String, ingredients: [String], condiments: [String]) async -> String {
-    sandwichMakerSays("Preparing your sandwich...")
-    
-    let toasted = await toastBread(bread)
-    let sliced = await slice(ingredients)
+func slice(_ ingredients: [String]) async -> [String] {
+    var results = [String]()
+    for ingredient in ingredients {
+        sandwichMakerSays("Slicing \(ingredient)")
+        try? await Task.sleep(for: .seconds(1))
+        results.append("sliced \(ingredient)")
+    }
+    return results
 }
 
-sandwichMakerSays("Spreading \(condiments.joined(separator: ", and ")) om \(toasted)")
-   sandwichMakerSays("Layering \(sliced.joined(separator: ", "))")
-   sandwichMakerSays("Putting lettuce on top")
-   sandwichMakerSays("Putting another slice of bread on top")
+func makeSandwich(bread: String, ingredients: [String], condiments: [String]) async -> String {
+    sandwichMakerSays("Preparing your sandwich...")
 
-   return "\(ingredients.joined(separator: ", ")), \(condiments.joined(separator: ", ")) on \(toasted)"
+    let toasted = await toastBread(bread)
+    let sliced = await slice(ingredients)
+
+    sandwichMakerSays("Spreading \(condiments.joined(separator: ", and ")) om \(toasted)")
+    sandwichMakerSays("Layering \(sliced.joined(separator: ", "))")
+    sandwichMakerSays("Putting lettuce on top")
+    sandwichMakerSays("Putting another slice of bread on top")
+
+    return "\(ingredients.joined(separator: ", ")), \(condiments.joined(separator: ", ")) on \(toasted)"
 
 }
 
@@ -45,10 +54,10 @@ sandwichMakerSays("Hello to Cafe Async, where we execute your order in asynchron
 sandwichMakerSays("Please place your order.")
 
 Task {
- let time = await clock.measure {
-   let sandwich = await makeSandwich(bread: "Rye", ingredients: ["Cucumbers", "Tomatoes"], condiments: ["Mayo", "Mustard"])
-   customerSays("Hmmm.... this looks like a delicious \(sandwich) sandwich!")
-   print("The end.")
- }
- print("Making this sandwich took \(time)")
+  let time = await clock.measure {
+    let sandwich = await makeSandwich(bread: "Rye", ingredients: ["Cucumbers", "Tomatoes"], condiments: ["Mayo", "Mustard"])
+    customerSays("Hmmm.... this looks like a delicious \(sandwich) sandwich!")
+    print("The end.")
+  }
+  print("Making this sandwich took \(time)")
 }
