@@ -11,6 +11,7 @@
 		3B8615322C29294A00051125 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8615312C29294A00051125 /* ContentView.swift */; };
 		3B8615342C29294E00051125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8615332C29294E00051125 /* Assets.xcassets */; };
 		3B8615372C29294E00051125 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8615362C29294E00051125 /* Preview Assets.xcassets */; };
+		3B8615402C292E2100051125 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B86153F2C292E2100051125 /* LibraryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3B8615362C29294E00051125 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B86153D2C2929BF00051125 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		3B86153E2C292A7A00051125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3B86153F2C292E2100051125 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				3B86153E2C292A7A00051125 /* Info.plist */,
 				3B86152F2C29294A00051125 /* WorddBrowserApp.swift */,
 				3B8615312C29294A00051125 /* ContentView.swift */,
+				3B86153F2C292E2100051125 /* LibraryViewModel.swift */,
 				3B8615332C29294E00051125 /* Assets.xcassets */,
 				3B8615352C29294E00051125 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8615322C29294A00051125 /* ContentView.swift in Sources */,
+				3B8615402C292E2100051125 /* LibraryViewModel.swift in Sources */,
 				3B8615302C29294A00051125 /* WorddBrowserApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
