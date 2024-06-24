@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct AddWorddView: View {
+struct AddWordView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var word: String = ""
     
     var onAddWord: (String) -> Void
+    
     var body: some View {
         Form {
             TextField("Word", text: $word)
@@ -26,8 +27,12 @@ struct AddWorddView: View {
                     dismiss()
                 }
             }
+            
+            ToolbarItem(placement: .confirmationAction) {
+                Button("Done", action: handleOnAddWord)
+                    .disabled(word.isEmpty)
+            }
         }
-        
     }
     
     private func handleOnAddWord() {
@@ -37,9 +42,12 @@ struct AddWorddView: View {
 }
 
 #Preview {
-    NavigationStack{
-        AddWorddView(onAddWord: { word in
+    NavigationStack {
+//        AddWordView(onAddWord:  { word in
+//            print(word)
+//        })
+        AddWordView { word in
             print(word)
-        })
+        }
     }
 }
