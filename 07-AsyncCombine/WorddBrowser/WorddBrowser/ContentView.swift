@@ -22,6 +22,7 @@ struct SectionView: View {
                 Text("(No items match your filter criteria)")
             } else {
                 ForEach(words, id: \.self) { word in
+                    NavigationLink(destination: WordDetailView(word: word))
                     Text(word)
                 }
             }
@@ -42,9 +43,7 @@ struct ContentView: View {
         .textInputAutocapitalization(.never)
         .navigationTitle("Libary")
         .refreshable {
-            print("\(#function) is on main thread BEFORE await: \(Thread.isMainThread)")
             await viewModel.refresh()
-            print("\(#function) is on main thread AFTER await: \(Thread.isMainThread)")
         }
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
