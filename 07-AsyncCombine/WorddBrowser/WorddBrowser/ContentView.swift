@@ -40,7 +40,10 @@ struct ContentView: View {
         }
         .searchable(text: $viewModel.searchText)
         .textInputAutocapitalization(.never)
-        .navigationTitle("")
+        .navigationTitle("Libary")
+        .refreshable {
+            await viewModel.refresh()
+        }
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button (action:{isAddNewWordDialogPresented.toggle()}){
