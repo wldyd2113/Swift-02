@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct WorddBrowserApp: App {
+struct WordBrowserApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
