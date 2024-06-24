@@ -4,5 +4,7 @@
         <page name='Synchronous Programming'/>
         <page name='Completion Handler'/>
         <page name='Asynchronous Programming with async-await'/>
+        <page name='Asynchronous Completion Handler'/>
+        <page name='AsyncAwait'/>
     </pages>
 </playground>
