@@ -58,10 +58,10 @@
 		3B8285082C2A5EEB0030AED0 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				3B8285172C2A5F450030AED0 /* WeatherApp.entitlements */,
 				3B8285182C2A64170030AED0 /* Model */,
 				3B8285192C2A641E0030AED0 /* View */,
 				3B82851C2C2A64F10030AED0 /* Controller */,
-				3B8285172C2A5F450030AED0 /* WeatherApp.entitlements */,
 				3B8285092C2A5EEB0030AED0 /* WeatherAppApp.swift */,
 				3B82850D2C2A5EED0030AED0 /* Assets.xcassets */,
 				3B82850F2C2A5EED0030AED0 /* Preview Content */,
@@ -314,6 +314,7 @@
 				DEVELOPMENT_TEAM = 59FP2PXRXK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = .;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +345,7 @@
 				DEVELOPMENT_TEAM = 59FP2PXRXK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = .;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
