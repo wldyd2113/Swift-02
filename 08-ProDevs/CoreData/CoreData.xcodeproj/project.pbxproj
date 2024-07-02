@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B81ACDF2C339BAC00330F54 /* CoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81ACDE2C339BAC00330F54 /* CoreDataApp.swift */; };
-		3B81ACE12C339BAC00330F54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81ACE02C339BAC00330F54 /* ContentView.swift */; };
-		3B81ACE32C339BAE00330F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B81ACE22C339BAE00330F54 /* Assets.xcassets */; };
-		3B81ACE62C339BAE00330F54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B81ACE52C339BAE00330F54 /* Preview Assets.xcassets */; };
-		3B81ACE82C339BAE00330F54 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81ACE72C339BAE00330F54 /* Persistence.swift */; };
-		3B81ACEB2C339BAE00330F54 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B81ACE92C339BAE00330F54 /* CoreData.xcdatamodeld */; };
+		3B81ACFE2C339CB500330F54 /* CoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81ACFD2C339CB500330F54 /* CoreDataApp.swift */; };
+		3B81AD002C339CB500330F54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81ACFF2C339CB500330F54 /* ContentView.swift */; };
+		3B81AD022C339CB700330F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B81AD012C339CB700330F54 /* Assets.xcassets */; };
+		3B81AD052C339CB700330F54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B81AD042C339CB700330F54 /* Preview Assets.xcassets */; };
+		3B81AD072C339CB700330F54 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81AD062C339CB700330F54 /* Persistence.swift */; };
+		3B81AD0A2C339CB700330F54 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B81AD082C339CB700330F54 /* CoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B81ACDB2C339BAC00330F54 /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B81ACDE2C339BAC00330F54 /* CoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataApp.swift; sourceTree = "<group>"; };
-		3B81ACE02C339BAC00330F54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3B81ACE22C339BAE00330F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B81ACE52C339BAE00330F54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3B81ACE72C339BAE00330F54 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		3B81ACEA2C339BAE00330F54 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		3B81ACFA2C339CB500330F54 /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B81ACFD2C339CB500330F54 /* CoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataApp.swift; sourceTree = "<group>"; };
+		3B81ACFF2C339CB500330F54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B81AD012C339CB700330F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B81AD042C339CB700330F54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B81AD062C339CB700330F54 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3B81AD092C339CB700330F54 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B81ACD82C339BAC00330F54 /* Frameworks */ = {
+		3B81ACF72C339CB500330F54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +36,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B81ACD22C339BAC00330F54 = {
+		3B81ACF12C339CB500330F54 = {
 			isa = PBXGroup;
 			children = (
-				3B81ACDD2C339BAC00330F54 /* CoreData */,
-				3B81ACDC2C339BAC00330F54 /* Products */,
+				3B81ACFC2C339CB500330F54 /* CoreData */,
+				3B81ACFB2C339CB500330F54 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3B81ACDC2C339BAC00330F54 /* Products */ = {
+		3B81ACFB2C339CB500330F54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B81ACDB2C339BAC00330F54 /* CoreData.app */,
+				3B81ACFA2C339CB500330F54 /* CoreData.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B81ACDD2C339BAC00330F54 /* CoreData */ = {
+		3B81ACFC2C339CB500330F54 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				3B81ACDE2C339BAC00330F54 /* CoreDataApp.swift */,
-				3B81ACE02C339BAC00330F54 /* ContentView.swift */,
-				3B81ACE22C339BAE00330F54 /* Assets.xcassets */,
-				3B81ACE72C339BAE00330F54 /* Persistence.swift */,
-				3B81ACE92C339BAE00330F54 /* CoreData.xcdatamodeld */,
-				3B81ACE42C339BAE00330F54 /* Preview Content */,
+				3B81ACFD2C339CB500330F54 /* CoreDataApp.swift */,
+				3B81ACFF2C339CB500330F54 /* ContentView.swift */,
+				3B81AD012C339CB700330F54 /* Assets.xcassets */,
+				3B81AD062C339CB700330F54 /* Persistence.swift */,
+				3B81AD082C339CB700330F54 /* CoreData.xcdatamodeld */,
+				3B81AD032C339CB700330F54 /* Preview Content */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		3B81ACE42C339BAE00330F54 /* Preview Content */ = {
+		3B81AD032C339CB700330F54 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3B81ACE52C339BAE00330F54 /* Preview Assets.xcassets */,
+				3B81AD042C339CB700330F54 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,13 +76,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B81ACDA2C339BAC00330F54 /* CoreData */ = {
+		3B81ACF92C339CB500330F54 /* CoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B81ACEE2C339BAE00330F54 /* Build configuration list for PBXNativeTarget "CoreData" */;
+			buildConfigurationList = 3B81AD0D2C339CB700330F54 /* Build configuration list for PBXNativeTarget "CoreData" */;
 			buildPhases = (
-				3B81ACD72C339BAC00330F54 /* Sources */,
-				3B81ACD82C339BAC00330F54 /* Frameworks */,
-				3B81ACD92C339BAC00330F54 /* Resources */,
+				3B81ACF62C339CB500330F54 /* Sources */,
+				3B81ACF72C339CB500330F54 /* Frameworks */,
+				3B81ACF82C339CB500330F54 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,25 +90,25 @@
 			);
 			name = CoreData;
 			productName = CoreData;
-			productReference = 3B81ACDB2C339BAC00330F54 /* CoreData.app */;
+			productReference = 3B81ACFA2C339CB500330F54 /* CoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3B81ACD32C339BAC00330F54 /* Project object */ = {
+		3B81ACF22C339CB500330F54 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					3B81ACDA2C339BAC00330F54 = {
+					3B81ACF92C339CB500330F54 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 3B81ACD62C339BAC00330F54 /* Build configuration list for PBXProject "CoreData" */;
+			buildConfigurationList = 3B81ACF52C339CB500330F54 /* Build configuration list for PBXProject "CoreData" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +116,44 @@
 				en,
 				Base,
 			);
-			mainGroup = 3B81ACD22C339BAC00330F54;
-			productRefGroup = 3B81ACDC2C339BAC00330F54 /* Products */;
+			mainGroup = 3B81ACF12C339CB500330F54;
+			productRefGroup = 3B81ACFB2C339CB500330F54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B81ACDA2C339BAC00330F54 /* CoreData */,
+				3B81ACF92C339CB500330F54 /* CoreData */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3B81ACD92C339BAC00330F54 /* Resources */ = {
+		3B81ACF82C339CB500330F54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B81ACE62C339BAE00330F54 /* Preview Assets.xcassets in Resources */,
-				3B81ACE32C339BAE00330F54 /* Assets.xcassets in Resources */,
+				3B81AD052C339CB700330F54 /* Preview Assets.xcassets in Resources */,
+				3B81AD022C339CB700330F54 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B81ACD72C339BAC00330F54 /* Sources */ = {
+		3B81ACF62C339CB500330F54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B81ACEB2C339BAE00330F54 /* CoreData.xcdatamodeld in Sources */,
-				3B81ACE82C339BAE00330F54 /* Persistence.swift in Sources */,
-				3B81ACE12C339BAC00330F54 /* ContentView.swift in Sources */,
-				3B81ACDF2C339BAC00330F54 /* CoreDataApp.swift in Sources */,
+				3B81AD0A2C339CB700330F54 /* CoreData.xcdatamodeld in Sources */,
+				3B81AD072C339CB700330F54 /* Persistence.swift in Sources */,
+				3B81AD002C339CB500330F54 /* ContentView.swift in Sources */,
+				3B81ACFE2C339CB500330F54 /* CoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3B81ACEC2C339BAE00330F54 /* Debug */ = {
+		3B81AD0B2C339CB700330F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		3B81ACED2C339BAE00330F54 /* Release */ = {
+		3B81AD0C2C339CB700330F54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,7 +272,7 @@
 			};
 			name = Release;
 		};
-		3B81ACEF2C339BAE00330F54 /* Debug */ = {
+		3B81AD0E2C339CB700330F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -300,7 +300,7 @@
 			};
 			name = Debug;
 		};
-		3B81ACF02C339BAE00330F54 /* Release */ = {
+		3B81AD0F2C339CB700330F54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,20 +331,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B81ACD62C339BAC00330F54 /* Build configuration list for PBXProject "CoreData" */ = {
+		3B81ACF52C339CB500330F54 /* Build configuration list for PBXProject "CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B81ACEC2C339BAE00330F54 /* Debug */,
-				3B81ACED2C339BAE00330F54 /* Release */,
+				3B81AD0B2C339CB700330F54 /* Debug */,
+				3B81AD0C2C339CB700330F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B81ACEE2C339BAE00330F54 /* Build configuration list for PBXNativeTarget "CoreData" */ = {
+		3B81AD0D2C339CB700330F54 /* Build configuration list for PBXNativeTarget "CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B81ACEF2C339BAE00330F54 /* Debug */,
-				3B81ACF02C339BAE00330F54 /* Release */,
+				3B81AD0E2C339CB700330F54 /* Debug */,
+				3B81AD0F2C339CB700330F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -352,17 +352,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3B81ACE92C339BAE00330F54 /* CoreData.xcdatamodeld */ = {
+		3B81AD082C339CB700330F54 /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3B81ACEA2C339BAE00330F54 /* CoreData.xcdatamodel */,
+				3B81AD092C339CB700330F54 /* CoreData.xcdatamodel */,
 			);
-			currentVersion = 3B81ACEA2C339BAE00330F54 /* CoreData.xcdatamodel */;
+			currentVersion = 3B81AD092C339CB700330F54 /* CoreData.xcdatamodel */;
 			path = CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 3B81ACD32C339BAC00330F54 /* Project object */;
+	rootObject = 3B81ACF22C339CB500330F54 /* Project object */;
 }
