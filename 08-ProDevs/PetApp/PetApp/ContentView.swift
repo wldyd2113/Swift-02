@@ -37,6 +37,15 @@ struct ContentView: View {
                         Text(pet.breed ?? "")
                     }
                 }
+                //삭제
+                .onDelete(perform: { indexSet in
+                    indexSet.forEach { index in
+                        let pet = petArray[index]
+                        coreDM.deletePet(animal: pet)
+                        displayPets()
+                        
+                    }
+                })
             }
             .padding()
             .onAppear {
