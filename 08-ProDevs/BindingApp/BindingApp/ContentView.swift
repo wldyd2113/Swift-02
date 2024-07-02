@@ -16,6 +16,7 @@ struct ContentView: View {
             HStack {
                 Text("Send a greeting:")
                 TextField("Type a message here", text: $message)
+                DisplayTextField(newVariable: $message)
             }
         }
         .padding()
@@ -25,3 +26,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
