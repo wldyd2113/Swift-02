@@ -11,6 +11,7 @@
 		3B81AD5E2C33E02E00330F54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81AD5D2C33E02E00330F54 /* ContentView.swift */; };
 		3B81AD602C33E03100330F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B81AD5F2C33E03100330F54 /* Assets.xcassets */; };
 		3B81AD632C33E03100330F54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B81AD622C33E03100330F54 /* Preview Assets.xcassets */; };
+		3B81AD6A2C33E19B00330F54 /* DisplayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B81AD692C33E19B00330F54 /* DisplayTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B81AD5D2C33E02E00330F54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B81AD5F2C33E03100330F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B81AD622C33E03100330F54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B81AD692C33E19B00330F54 /* DisplayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				3B81AD5B2C33E02E00330F54 /* StateObjectAppApp.swift */,
 				3B81AD5D2C33E02E00330F54 /* ContentView.swift */,
+				3B81AD692C33E19B00330F54 /* DisplayTextField.swift */,
 				3B81AD5F2C33E03100330F54 /* Assets.xcassets */,
 				3B81AD612C33E03100330F54 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				3B81AD5E2C33E02E00330F54 /* ContentView.swift in Sources */,
 				3B81AD5C2C33E02E00330F54 /* StateObjectAppApp.swift in Sources */,
+				3B81AD6A2C33E19B00330F54 /* DisplayTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
