@@ -11,6 +11,7 @@
 		3B642E282C3785EA0092335F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B642E272C3785EA0092335F /* ContentView.swift */; };
 		3B642E2A2C3785EC0092335F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B642E292C3785EC0092335F /* Assets.xcassets */; };
 		3B642E2D2C3785EC0092335F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B642E2C2C3785EC0092335F /* Preview Assets.xcassets */; };
+		3B642E342C3786610092335F /* SaturnV.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3B642E332C3786610092335F /* SaturnV.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B642E272C3785EA0092335F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B642E292C3785EC0092335F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B642E2C2C3785EC0092335F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B642E332C3786610092335F /* SaturnV.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = SaturnV.mov; path = ../../../../../../Downloads/SaturnV.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				3B642E252C3785EA0092335F /* VideoAppApp.swift */,
 				3B642E272C3785EA0092335F /* ContentView.swift */,
 				3B642E292C3785EC0092335F /* Assets.xcassets */,
+				3B642E332C3786610092335F /* SaturnV.mov */,
 				3B642E2B2C3785EC0092335F /* Preview Content */,
 			);
 			path = VideoApp;
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B642E342C3786610092335F /* SaturnV.mov in Resources */,
 				3B642E2D2C3785EC0092335F /* Preview Assets.xcassets in Resources */,
 				3B642E2A2C3785EC0092335F /* Assets.xcassets in Resources */,
 			);
