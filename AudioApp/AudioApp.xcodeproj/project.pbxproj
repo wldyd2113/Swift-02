@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B642DE82C377E6E0092335F /* AudioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B642DE72C377E6E0092335F /* AudioAppApp.swift */; };
-		3B642DEA2C377E6E0092335F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B642DE92C377E6E0092335F /* ContentView.swift */; };
-		3B642DEC2C377E700092335F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B642DEB2C377E700092335F /* Assets.xcassets */; };
-		3B642DEF2C377E700092335F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B642DEE2C377E700092335F /* Preview Assets.xcassets */; };
+		3B642E072C37806A0092335F /* AudioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B642E062C37806A0092335F /* AudioAppApp.swift */; };
+		3B642E092C37806A0092335F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B642E082C37806A0092335F /* ContentView.swift */; };
+		3B642E0B2C37806B0092335F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B642E0A2C37806B0092335F /* Assets.xcassets */; };
+		3B642E0E2C37806B0092335F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B642E0D2C37806B0092335F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B642DE42C377E6E0092335F /* AudioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B642DE72C377E6E0092335F /* AudioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAppApp.swift; sourceTree = "<group>"; };
-		3B642DE92C377E6E0092335F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3B642DEB2C377E700092335F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B642DEE2C377E700092335F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B642E032C37806A0092335F /* AudioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B642E062C37806A0092335F /* AudioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioAppApp.swift; sourceTree = "<group>"; };
+		3B642E082C37806A0092335F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B642E0A2C37806B0092335F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B642E0D2C37806B0092335F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B642DE12C377E6E0092335F /* Frameworks */ = {
+		3B642E002C37806A0092335F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B642DDB2C377E6E0092335F = {
+		3B642DFA2C37806A0092335F = {
 			isa = PBXGroup;
 			children = (
-				3B642DE62C377E6E0092335F /* AudioApp */,
-				3B642DE52C377E6E0092335F /* Products */,
+				3B642E052C37806A0092335F /* AudioApp */,
+				3B642E042C37806A0092335F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3B642DE52C377E6E0092335F /* Products */ = {
+		3B642E042C37806A0092335F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B642DE42C377E6E0092335F /* AudioApp.app */,
+				3B642E032C37806A0092335F /* AudioApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B642DE62C377E6E0092335F /* AudioApp */ = {
+		3B642E052C37806A0092335F /* AudioApp */ = {
 			isa = PBXGroup;
 			children = (
-				3B642DE72C377E6E0092335F /* AudioAppApp.swift */,
-				3B642DE92C377E6E0092335F /* ContentView.swift */,
-				3B642DEB2C377E700092335F /* Assets.xcassets */,
-				3B642DED2C377E700092335F /* Preview Content */,
+				3B642E062C37806A0092335F /* AudioAppApp.swift */,
+				3B642E082C37806A0092335F /* ContentView.swift */,
+				3B642E0A2C37806B0092335F /* Assets.xcassets */,
+				3B642E0C2C37806B0092335F /* Preview Content */,
 			);
 			path = AudioApp;
 			sourceTree = "<group>";
 		};
-		3B642DED2C377E700092335F /* Preview Content */ = {
+		3B642E0C2C37806B0092335F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3B642DEE2C377E700092335F /* Preview Assets.xcassets */,
+				3B642E0D2C37806B0092335F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B642DE32C377E6E0092335F /* AudioApp */ = {
+		3B642E022C37806A0092335F /* AudioApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B642DF22C377E700092335F /* Build configuration list for PBXNativeTarget "AudioApp" */;
+			buildConfigurationList = 3B642E112C37806B0092335F /* Build configuration list for PBXNativeTarget "AudioApp" */;
 			buildPhases = (
-				3B642DE02C377E6E0092335F /* Sources */,
-				3B642DE12C377E6E0092335F /* Frameworks */,
-				3B642DE22C377E6E0092335F /* Resources */,
+				3B642DFF2C37806A0092335F /* Sources */,
+				3B642E002C37806A0092335F /* Frameworks */,
+				3B642E012C37806A0092335F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = AudioApp;
 			productName = AudioApp;
-			productReference = 3B642DE42C377E6E0092335F /* AudioApp.app */;
+			productReference = 3B642E032C37806A0092335F /* AudioApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3B642DDC2C377E6E0092335F /* Project object */ = {
+		3B642DFB2C37806A0092335F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					3B642DE32C377E6E0092335F = {
+					3B642E022C37806A0092335F = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 3B642DDF2C377E6E0092335F /* Build configuration list for PBXProject "AudioApp" */;
+			buildConfigurationList = 3B642DFE2C37806A0092335F /* Build configuration list for PBXProject "AudioApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 3B642DDB2C377E6E0092335F;
-			productRefGroup = 3B642DE52C377E6E0092335F /* Products */;
+			mainGroup = 3B642DFA2C37806A0092335F;
+			productRefGroup = 3B642E042C37806A0092335F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B642DE32C377E6E0092335F /* AudioApp */,
+				3B642E022C37806A0092335F /* AudioApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3B642DE22C377E6E0092335F /* Resources */ = {
+		3B642E012C37806A0092335F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B642DEF2C377E700092335F /* Preview Assets.xcassets in Resources */,
-				3B642DEC2C377E700092335F /* Assets.xcassets in Resources */,
+				3B642E0E2C37806B0092335F /* Preview Assets.xcassets in Resources */,
+				3B642E0B2C37806B0092335F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3B642DE02C377E6E0092335F /* Sources */ = {
+		3B642DFF2C37806A0092335F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B642DEA2C377E6E0092335F /* ContentView.swift in Sources */,
-				3B642DE82C377E6E0092335F /* AudioAppApp.swift in Sources */,
+				3B642E092C37806A0092335F /* ContentView.swift in Sources */,
+				3B642E072C37806A0092335F /* AudioAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3B642DF02C377E700092335F /* Debug */ = {
+		3B642E0F2C37806B0092335F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		3B642DF12C377E700092335F /* Release */ = {
+		3B642E102C37806B0092335F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,7 +264,7 @@
 			};
 			name = Release;
 		};
-		3B642DF32C377E700092335F /* Debug */ = {
+		3B642E122C37806B0092335F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -292,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		3B642DF42C377E700092335F /* Release */ = {
+		3B642E132C37806B0092335F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B642DDF2C377E6E0092335F /* Build configuration list for PBXProject "AudioApp" */ = {
+		3B642DFE2C37806A0092335F /* Build configuration list for PBXProject "AudioApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B642DF02C377E700092335F /* Debug */,
-				3B642DF12C377E700092335F /* Release */,
+				3B642E0F2C37806B0092335F /* Debug */,
+				3B642E102C37806B0092335F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B642DF22C377E700092335F /* Build configuration list for PBXNativeTarget "AudioApp" */ = {
+		3B642E112C37806B0092335F /* Build configuration list for PBXNativeTarget "AudioApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B642DF32C377E700092335F /* Debug */,
-				3B642DF42C377E700092335F /* Release */,
+				3B642E122C37806B0092335F /* Debug */,
+				3B642E132C37806B0092335F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3B642DDC2C377E6E0092335F /* Project object */;
+	rootObject = 3B642DFB2C37806A0092335F /* Project object */;
 }
