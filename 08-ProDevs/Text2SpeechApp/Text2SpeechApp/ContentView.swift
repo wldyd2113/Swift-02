@@ -23,6 +23,12 @@ struct ContentView: View {
             Button {
                 convertText = AVSpeechUtterance(string: textToRoad)
                 convertText.rate = sliderValue
+                
+                //나라별 목소리
+                let voice = AVSpeechSynthesisVoice(language: "ko-KR")
+                
+                convertText.voice = voice
+                
                 audio.speak(convertText)
             }
         label: {
