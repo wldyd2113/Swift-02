@@ -9,30 +9,63 @@ import SwiftUI
 import Speech
 
 struct ContentView: View {
-    let audioEngin = AVAudioEngine()
-    let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ko-KR"))
+    let audioEngine = AVAudioEngine()
+    let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
     
     @State var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     @State var recognitionTask: SFSpeechRecognitionTask?
     
     @State var message = ""
     @State var buttonStatus = true
+    @State var newColor: Color = .white
+        
+    var body: some View {
+        VStack (spacing: 25) {
+            Button {
+                recognizeSpeech()
+            } label: {
+                Text("Start recording")
+            }
+            TextField("Spoken text appears here", text: $message)
+            Button {
+                message = ""
+                newColor = .white
+                stopSpeech()
+            } label: {
+                Text("Stop recording")
+            }
+        }
+        .background(newColor)
+    }
     
-    func startRecording() {
+    // MARK: - Methods
+    func checkSpokenCommand(commandString: String) {
+        switch commandString {
+        case "Purple":
+            newColor = .purple
+        case "Green":
+            newColor = .green
+        case "Yellow":
+            newColor = .yellow
+        default:
+            newColor = .white
+        }
+    }
+    
+    func recognizeSpeech() {
         message = "Start recording"
-        let node = audioEngin.inputNode
+        let node = audioEngine.inputNode
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         recognitionRequest?.shouldReportPartialResults = true
         let recordingFormat = node.outputFormat(forBus: 0)
         node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
             recognitionRequest?.append(buffer)
         }
-        audioEngin.prepare()
+        audioEngine.prepare()
         do {
-            try audioEngin.start()
-        }
-        catch {
-            return print(error)
+            try audioEngine.start()
+        } catch {
+            return print (error)
         }
         guard let recognizeMe = SFSpeechRecognizer() else {
             return
@@ -44,36 +77,20 @@ struct ContentView: View {
             if let result = result {
                 let transcribedString = result.bestTranscription.formattedString
                 message = transcribedString
+                checkSpokenCommand(commandString: transcribedString)
             } else if let error = error {
                 print(error)
             }
         })
     }
     
-    func stopRecording() {
-        audioEngin.stop()
-        recognitionTask?.cancel()
-        audioEngin.inputNode.removeTap(onBus: 0)
+    func stopSpeech() {
+        audioEngine.stop()
         recognitionRequest?.endAudio()
+        recognitionTask?.cancel()
+        audioEngine.inputNode.removeTap(onBus: 0)
     }
-    
-    var body: some View {
-        VStack {
-            TextEditor(text: $message)
-                .frame(width: 350, height: 400)
-            Button(buttonStatus ? "Start recording" : "Stop recording", action: {
-                buttonStatus.toggle()
-                if buttonStatus {
-                    stopRecording()
-                } else {
-                    startRecording()
-                }
-            })
-            .padding()
-            .background(buttonStatus ? Color.green : Color.red)
-        }
-        .padding()
-    }
+
 }
 
 #Preview {
