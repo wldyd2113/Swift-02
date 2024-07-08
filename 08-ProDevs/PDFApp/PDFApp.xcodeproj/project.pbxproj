@@ -11,6 +11,7 @@
 		3B7B8D8B2C3B85E80080D9D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B8D8A2C3B85E80080D9D6 /* ContentView.swift */; };
 		3B7B8D8D2C3B85EA0080D9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B8D8C2C3B85EA0080D9D6 /* Assets.xcassets */; };
 		3B7B8D902C3B85EA0080D9D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B8D8F2C3B85EA0080D9D6 /* Preview Assets.xcassets */; };
+		3B7B8D972C3B87640080D9D6 /* example.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B8D962C3B87640080D9D6 /* example.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3B7B8D8A2C3B85E80080D9D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B7B8D8C2C3B85EA0080D9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7B8D8F2C3B85EA0080D9D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B7B8D962C3B87640080D9D6 /* example.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = example.pdf; path = ../../../../../../Downloads/example.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				3B7B8D882C3B85E80080D9D6 /* PDFAppApp.swift */,
 				3B7B8D8A2C3B85E80080D9D6 /* ContentView.swift */,
 				3B7B8D8C2C3B85EA0080D9D6 /* Assets.xcassets */,
+				3B7B8D962C3B87640080D9D6 /* example.pdf */,
 				3B7B8D8E2C3B85EA0080D9D6 /* Preview Content */,
 			);
 			path = PDFApp;
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7B8D972C3B87640080D9D6 /* example.pdf in Resources */,
 				3B7B8D902C3B85EA0080D9D6 /* Preview Assets.xcassets in Resources */,
 				3B7B8D8D2C3B85EA0080D9D6 /* Assets.xcassets in Resources */,
 			);
