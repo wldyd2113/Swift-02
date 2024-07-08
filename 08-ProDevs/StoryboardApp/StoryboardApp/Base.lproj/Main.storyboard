@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="jwm-R7-QpM" kind="show" id="9NW-L4-RAB"/>
+                                    <segue destination="jwm-R7-QpM" kind="show" id="ZeW-ZY-BYq"/>
                                 </connections>
                             </button>
                         </subviews>
