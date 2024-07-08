@@ -27,6 +27,10 @@ struct ContentView: View {
                 //나라별 목소리
                 let voice = AVSpeechSynthesisVoice(language: "ko-KR")
                 
+                // 다양한 음성 지원 (안되는 것도 있음)
+                // https://gist.github.com/Koze/d1de49c24fc28375a9e314c72f7fdae4
+                //                let voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.siri_male_en-GB_compact")
+                                // Assign the voice to the utterance.                
                 convertText.voice = voice
                 
                 audio.speak(convertText)
