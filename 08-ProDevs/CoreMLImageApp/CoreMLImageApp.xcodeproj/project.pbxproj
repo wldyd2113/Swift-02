@@ -11,6 +11,8 @@
 		3B52602F2C3CF19E00BB588B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52602E2C3CF19E00BB588B /* ContentView.swift */; };
 		3B5260312C3CF1A000BB588B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5260302C3CF1A000BB588B /* Assets.xcassets */; };
 		3B5260342C3CF1A000BB588B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5260332C3CF1A000BB588B /* Preview Assets.xcassets */; };
+		3B52603C2C3CF25600BB588B /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3B52603A2C3CF25600BB588B /* MobileNetV2.mlmodel */; };
+		3B52603D2C3CF25600BB588B /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3B52603B2C3CF25600BB588B /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3B52602E2C3CF19E00BB588B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B5260302C3CF1A000BB588B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5260332C3CF1A000BB588B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B52603A2C3CF25600BB588B /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../../../Downloads/MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		3B52603B2C3CF25600BB588B /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SqueezeNet.mlmodel; path = ../../../../../Downloads/SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 		3B5260202C3CF19E00BB588B = {
 			isa = PBXGroup;
 			children = (
+				3B52603A2C3CF25600BB588B /* MobileNetV2.mlmodel */,
+				3B52603B2C3CF25600BB588B /* SqueezeNet.mlmodel */,
 				3B52602B2C3CF19E00BB588B /* CoreMLImageApp */,
 				3B52602A2C3CF19E00BB588B /* Products */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B52603C2C3CF25600BB588B /* MobileNetV2.mlmodel in Sources */,
 				3B52602F2C3CF19E00BB588B /* ContentView.swift in Sources */,
 				3B52602D2C3CF19E00BB588B /* CoreMLImageAppApp.swift in Sources */,
+				3B52603D2C3CF25600BB588B /* SqueezeNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
