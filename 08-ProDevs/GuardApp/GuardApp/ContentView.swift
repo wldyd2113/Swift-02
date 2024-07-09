@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showImage: UIImage = UIImage(systemName: "photo")!
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Image(uiImage: showImage)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 300, height: 400)
+            Button {
+                getImage("xyz")
+            } label: {
+                Text("Add Picture")
+            }
         }
         .padding()
+    }
+    func getImage(_ imageName: String) {
+        guard UIImage(named: imageName) != nil else {
+            showImage = UIImage(systemName: "xmark.octagon.fill")!
+            return
+        }
+        showImage = UIImage(named: imageName)!
+       
     }
 }
 
