@@ -14,19 +14,22 @@ struct ContentView: View {
     
     @State var message = ""
     @State var arrayIndex = 0
-    @State var newImage: UIImage = UIImage(systemName: "smiley.fill")!
-    
+    @State var analyzedImage: UIImage?
+
     var body: some View {
         VStack {
-//            Image(uiImage: newImage)
-//                .resizable()
-//                .aspectRatio(contentMode: .fit)
-//                .frame(width: .infinity, height: 400)
-            Image(photoArray[arrayIndex])
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .blur(radius: 3.0)
-                .frame(width: 500, height: 500)
+            if let image = analyzedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 500)
+            } else {
+                Image(photoArray[arrayIndex])
+                    .resizable()
+                    .blur(radius: 5)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 500)
+            }
             Text(message)
                 .padding()
             Button {
@@ -44,6 +47,7 @@ struct ContentView: View {
                         arrayIndex -= 1
                     }
                     message = ""
+                    analyzedImage = nil
                 } label: {
                     Image(systemName: "chevron.left.square.fill")
                         .font(.largeTitle)
@@ -56,6 +60,7 @@ struct ContentView: View {
                         arrayIndex += 1
                     }
                     message = ""
+                    analyzedImage = nil
                 } label: {
                     Image(systemName: "chevron.right.square.fill")
                         .font(.largeTitle)
@@ -77,36 +82,31 @@ struct ContentView: View {
             fatalError("Can't find a face in the picture")
         }
         message = "Found \(foundFaces.count) faces in the picture"
-        for faceRectangle in foundFaces {
-            let landmarkRegions: [VNFaceLandmarkRegion2D] = []
-            drawImage(source: newImage, boundary: faceRectangle.boundingBox, faceLandmarkRegions: landmarkRegions)
-        }
-    }
-    
-    func drawImage(source: UIImage, boundary: CGRect, faceLandmarkRegions: [VNFaceLandmarkRegion2D]) {
-        UIGraphicsBeginImageContextWithOptions(source.size, false, 1)
+        
+        guard let image = UIImage(named: photoArray[arrayIndex]) else { return }
+        
+        UIGraphicsBeginImageContextWithOptions(image.size, false, 0.0)
         let context = UIGraphicsGetCurrentContext()!
-        context.translateBy(x: 0, y: source.size.height)
+                
+        image.draw(in: CGRect(origin: .zero, size: image.size))
+        
+        // 이미지를 그린 후 좌표계를 변환합니다.
+        context.translateBy(x: 0, y: image.size.height)
         context.scaleBy(x: 1.0, y: -1.0)
-        context.setLineJoin(.round)
-        context.setLineCap(.round)
-        context.setShouldAntialias(true)
-        context.setAllowsAntialiasing(true)
-        let rect = CGRect(x: 0, y: 0, width: source.size.width, height: source.size.height)
-        context.draw(source.cgImage!, in: rect)
-        // 얼굴 주위에 직사각형을 그립니다.
-        let fillColor = UIColor.red
-        fillColor.setStroke()
-        let rectangleWidth = source.size.width * boundary.size.width
-        let rectangleHeight = source.size.height * boundary.size.height
-        context.setLineWidth(8)
-        context.addRect(CGRect(x: boundary.origin.x * source.size.width, y: boundary.origin.y * source.size.height, width: rectangleWidth, height: rectangleHeight))
-        context.drawPath(using: .stroke)
-        let modifiedImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        newImage = modifiedImage
-    }
+        
+        context.setStrokeColor(UIColor.red.cgColor)
+        context.setLineWidth(5)
 
+        for faceObservation in foundFaces {
+            let faceRect = VNImageRectForNormalizedRect(faceObservation.boundingBox, Int(image.size.width), Int(image.size.height))
+            context.stroke(faceRect)
+        }
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        analyzedImage = newImage
+    }
 }
 
 #Preview {
