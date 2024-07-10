@@ -14,6 +14,8 @@
 		3B55E7F82C3E406700CDD713 /* MenuGroupingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B55E7F72C3E406700CDD713 /* MenuGroupingTests.swift */; };
 		3B55E8022C3E406700CDD713 /* AlbertosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B55E8012C3E406700CDD713 /* AlbertosUITests.swift */; };
 		3B55E8042C3E406700CDD713 /* AlbertosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B55E8032C3E406700CDD713 /* AlbertosUITestsLaunchTests.swift */; };
+		3B55E8112C3E42D200CDD713 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B55E8102C3E42D200CDD713 /* MenuItem.swift */; };
+		3B55E8132C3E42ED00CDD713 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B55E8122C3E42ED00CDD713 /* MenuSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		3B55E7FD2C3E406700CDD713 /* AlbertosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B55E8012C3E406700CDD713 /* AlbertosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosUITests.swift; sourceTree = "<group>"; };
 		3B55E8032C3E406700CDD713 /* AlbertosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B55E8102C3E42D200CDD713 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		3B55E8122C3E42ED00CDD713 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				3B55E7E82C3E406300CDD713 /* ContentView.swift */,
 				3B55E7EA2C3E406600CDD713 /* Assets.xcassets */,
 				3B55E7EC2C3E406600CDD713 /* Preview Content */,
+				3B55E8102C3E42D200CDD713 /* MenuItem.swift */,
+				3B55E8122C3E42ED00CDD713 /* MenuSection.swift */,
 			);
 			path = Albertos;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B55E8112C3E42D200CDD713 /* MenuItem.swift in Sources */,
 				3B55E7E92C3E406300CDD713 /* ContentView.swift in Sources */,
+				3B55E8132C3E42ED00CDD713 /* MenuSection.swift in Sources */,
 				3B55E7E72C3E406300CDD713 /* AlbertosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
