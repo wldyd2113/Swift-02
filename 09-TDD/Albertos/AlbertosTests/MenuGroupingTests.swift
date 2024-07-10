@@ -25,9 +25,9 @@ final class MenuGroupingTests: XCTestCase {
         let menu = [
             MenuItem(category: "pastas", name: "a pasta"),
             MenuItem(category: "drinks", name: "a drink"),
-            MenuItem(category: "pastas", name: "another pasta"),
             MenuItem(category: "desserts", name: "a dessert"),
-        ]
+            MenuItem(category: "pastas", name: "another pasta"),
+          ].shuffled()
         let sections = groupMenuByCategory(menu)
         XCTAssertEqual(sections.count, 3)
         XCTAssertEqual(sections[safe: 0]?.category, "pastas")
