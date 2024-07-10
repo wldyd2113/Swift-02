@@ -11,6 +11,4 @@ struct MenuSection {
     
 }
 
-func groupMenuByCategory(_ menu: [MenuItem]) -> [MenuSection] {
-    return []
-}
+
