@@ -29,3 +29,4 @@ func testFizzBuzz() {
     test(value: fizzBuzz(7), matches: "7")
 
 }
+testFizzBuzz()
