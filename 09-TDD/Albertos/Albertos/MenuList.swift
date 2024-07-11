@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MenuList: View {
-    let sections: [MenuSection]
+    let viewModel: ViewModel
 
     var body: some View {
         List {
-            ForEach(sections) { section in
+            ForEach(viewModel.sections) { section in
                 Section(header: Text(section.category)) {
                     ForEach(section.items) { item in
                         Text(item.name)
@@ -24,6 +24,6 @@ struct MenuList: View {
 }
 
 #Preview {
-    MenuList(sections: groupMenuByCategory(menu))
+    MenuList(viewModel: .init(menu: menu, menuGrouping: groupMenuByCategory))
 }
 
