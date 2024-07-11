@@ -24,6 +24,6 @@ struct MenuList: View {
 }
 
 #Preview {
-    MenuList(viewModel: .init(menu: menu, menuGrouping: groupMenuByCategory))
+    MenuList(viewModel: .init())
 }
 

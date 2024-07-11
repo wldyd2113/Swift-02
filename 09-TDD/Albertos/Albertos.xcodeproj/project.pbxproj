@@ -24,6 +24,8 @@
 		3B784F362C3F6E5500BE4038 /* MenuRow.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F352C3F6E5500BE4038 /* MenuRow.ViewModel.swift */; };
 		3B784F382C3F75A400BE4038 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F372C3F75A400BE4038 /* MenuListViewModelTests.swift */; };
 		3B784F3A2C3F780E00BE4038 /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F392C3F780E00BE4038 /* MenuList.ViewModel.swift */; };
+		3B784F3C2C3F932000BE4038 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F3B2C3F932000BE4038 /* MenuFetching.swift */; };
+		3B784F3E2C3F940200BE4038 /* MenuFetchingSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F3D2C3F940200BE4038 /* MenuFetchingSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		3B784F352C3F6E5500BE4038 /* MenuRow.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.ViewModel.swift; sourceTree = "<group>"; };
 		3B784F372C3F75A400BE4038 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
 		3B784F392C3F780E00BE4038 /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
+		3B784F3B2C3F932000BE4038 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
+		3B784F3D2C3F940200BE4038 /* MenuFetchingSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +122,13 @@
 				3B55E7E82C3E406300CDD713 /* MenuList.swift */,
 				3B784F312C3F6CCA00BE4038 /* MenuRow.swift */,
 				3B784F352C3F6E5500BE4038 /* MenuRow.ViewModel.swift */,
-				3B55E7EA2C3E406600CDD713 /* Assets.xcassets */,
-				3B55E7EC2C3E406600CDD713 /* Preview Content */,
 				3B55E8102C3E42D200CDD713 /* MenuItem.swift */,
 				3B55E8122C3E42ED00CDD713 /* MenuSection.swift */,
 				3B784F392C3F780E00BE4038 /* MenuList.ViewModel.swift */,
+				3B55E7EA2C3E406600CDD713 /* Assets.xcassets */,
+				3B55E7EC2C3E406600CDD713 /* Preview Content */,
+				3B784F3B2C3F932000BE4038 /* MenuFetching.swift */,
+				3B784F3D2C3F940200BE4038 /* MenuFetchingSample.swift */,
 			);
 			path = Albertos;
 			sourceTree = "<group>";
@@ -289,10 +295,12 @@
 			files = (
 				3B784F3A2C3F780E00BE4038 /* MenuList.ViewModel.swift in Sources */,
 				3B55E8112C3E42D200CDD713 /* MenuItem.swift in Sources */,
+				3B784F3C2C3F932000BE4038 /* MenuFetching.swift in Sources */,
 				3B55E7E92C3E406300CDD713 /* MenuList.swift in Sources */,
 				3B55E8132C3E42ED00CDD713 /* MenuSection.swift in Sources */,
 				3B784F362C3F6E5500BE4038 /* MenuRow.ViewModel.swift in Sources */,
 				3B55E7E72C3E406300CDD713 /* AlbertosApp.swift in Sources */,
+				3B784F3E2C3F940200BE4038 /* MenuFetchingSample.swift in Sources */,
 				3B784F322C3F6CCA00BE4038 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
