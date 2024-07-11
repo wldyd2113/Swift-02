@@ -26,3 +26,4 @@ struct MenuList: View {
 #Preview {
     MenuList(sections: groupMenuByCategory(menu))
 }
+
