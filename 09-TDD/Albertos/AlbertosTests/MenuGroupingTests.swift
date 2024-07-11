@@ -8,11 +8,7 @@
 import XCTest
 @testable import Albertos
 
-extension Array {
-  subscript(safe index: Index) -> Element? {
-    0 <= index && index < count ? self[index] : nil
-  }
-}
+
 
 
 final class MenuGroupingTests: XCTestCase {
@@ -23,10 +19,10 @@ final class MenuGroupingTests: XCTestCase {
     func testMenuWithOneCategoryReturnOneSection() {
         // 메뉴아이템이 동일한 카테고리를 같는 경우 하난의 섹션으로 구분
         let menu = [
-            MenuItem(category: "pastas", name: "a pasta"),
-            MenuItem(category: "drinks", name: "a drink"),
-            MenuItem(category: "desserts", name: "a dessert"),
-            MenuItem(category: "pastas", name: "another pasta"),
+            MenuItem.fixture(category: "pastas", name: "a pasta"),
+            MenuItem.fixture(category: "drinks", name: "a drink"),
+            MenuItem.fixture(category: "desserts", name: "a dessert"),
+            MenuItem.fixture(category: "pastas", name: "another pasta"),
           ].shuffled()
         let sections = groupMenuByCategory(menu)
         XCTAssertEqual(sections.count, 3)
