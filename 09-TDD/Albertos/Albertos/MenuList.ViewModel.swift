@@ -4,12 +4,13 @@
 //
 //  Created by 차지용 on 7/11/24.
 //
+import Combine
 
 
 extension MenuList {
-    class ViewModel {
+    class ViewModel: ObservableObject {
         @Published var sections: [MenuSection] = []
-        
+
         private var cancellables = Set<AnyCancellable>()
         init(
             menuFetching: MenuFetching = MenuFetchingSample(),
