@@ -18,6 +18,7 @@
 		3B55E8132C3E42ED00CDD713 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B55E8122C3E42ED00CDD713 /* MenuSection.swift */; };
 		3B784F2C2C3F5F8400BE4038 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F2B2C3F5F8400BE4038 /* Array+Safe.swift */; };
 		3B784F2E2C3F5FA500BE4038 /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F2D2C3F5FA500BE4038 /* MenuItem+Fixture.swift */; };
+		3B784F302C3F683D00BE4038 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F2F2C3F683D00BE4038 /* MenuSection+Fixture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3B55E8122C3E42ED00CDD713 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
 		3B784F2B2C3F5F8400BE4038 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
 		3B784F2D2C3F5FA500BE4038 /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
+		3B784F2F2C3F683D00BE4038 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				3B55E7F72C3E406700CDD713 /* MenuGroupingTests.swift */,
 				3B784F2B2C3F5F8400BE4038 /* Array+Safe.swift */,
 				3B784F2D2C3F5FA500BE4038 /* MenuItem+Fixture.swift */,
+				3B784F2F2C3F683D00BE4038 /* MenuSection+Fixture.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B784F302C3F683D00BE4038 /* MenuSection+Fixture.swift in Sources */,
 				3B784F2C2C3F5F8400BE4038 /* Array+Safe.swift in Sources */,
 				3B784F2E2C3F5FA500BE4038 /* MenuItem+Fixture.swift in Sources */,
 				3B55E7F82C3E406700CDD713 /* MenuGroupingTests.swift in Sources */,

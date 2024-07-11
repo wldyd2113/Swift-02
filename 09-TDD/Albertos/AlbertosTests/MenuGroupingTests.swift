@@ -32,6 +32,21 @@ final class MenuGroupingTests: XCTestCase {
          // XCTAssertEqual failed: // ("nil") is not equal to ("Optional("drinks")")
          XCTAssertEqual(sections[safe: 2]?.category, "desserts")
          // XCTAssertEqual failed: // ("nil") is not equal to ("Optional("desserts")")
+        
+        func testMenuWithOneCategoryReturnOneSection() throws {
+            let menu: [MenuItem] = [
+                .fixture(category: "pastas", name: "a pasta"),
+                .fixture(category: "pastas", name: "another pasta"),
+            ]
+            let sections = groupMenuByCategory(menu)
+            
+            XCTAssertEqual(sections.count, 1)
+            let section = try XCTUnwrap(sections.first)
+            XCTAssertEqual(section.items.count, 2)
+            XCTAssertEqual(section.items.first?.name, "name")
+            XCTAssertEqual(section.items.last?.name, "other name")
+            
+        }
     }
     
     func testEmptyMenuReturnEmptySection() {
