@@ -26,6 +26,7 @@
 		3B784F3A2C3F780E00BE4038 /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F392C3F780E00BE4038 /* MenuList.ViewModel.swift */; };
 		3B784F3C2C3F932000BE4038 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F3B2C3F932000BE4038 /* MenuFetching.swift */; };
 		3B784F3E2C3F940200BE4038 /* MenuFetchingSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F3D2C3F940200BE4038 /* MenuFetchingSample.swift */; };
+		3B784F402C3FA8EA00BE4038 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B784F3F2C3FA8EA00BE4038 /* MenuFetchingStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		3B784F392C3F780E00BE4038 /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
 		3B784F3B2C3F932000BE4038 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		3B784F3D2C3F940200BE4038 /* MenuFetchingSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingSample.swift; sourceTree = "<group>"; };
+		3B784F3F2C3FA8EA00BE4038 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				3B784F2F2C3F683D00BE4038 /* MenuSection+Fixture.swift */,
 				3B784F332C3F6D3400BE4038 /* MenuRowViewModelTests.swift */,
 				3B784F372C3F75A400BE4038 /* MenuListViewModelTests.swift */,
+				3B784F3F2C3FA8EA00BE4038 /* MenuFetchingStub.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				3B784F2E2C3F5FA500BE4038 /* MenuItem+Fixture.swift in Sources */,
 				3B784F342C3F6D3400BE4038 /* MenuRowViewModelTests.swift in Sources */,
 				3B55E7F82C3E406700CDD713 /* MenuGroupingTests.swift in Sources */,
+				3B784F402C3FA8EA00BE4038 /* MenuFetchingStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
