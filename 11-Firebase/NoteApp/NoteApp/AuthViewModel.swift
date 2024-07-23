@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
+import FirebaseFirestore
 
 final class AuthViewModel: ObservableObject {
     @Published var user: User?
@@ -34,7 +35,19 @@ final class AuthViewModel: ObservableObject {
                 print("create error: \(error.localizedDescription)")
                 return
             }
-            dump(result)
+            else {
+                print("user id: \(result?.user.uid ?? "-")")
+//                guard let uid = Auth.auth().currentUser?.uid else { return }
+                guard let uid = result?.user.uid else { return }
+                Firestore.firestore().collection("Users").document(uid).setData(["email": emailAddress, "uid": uid]) { err in
+                    if let err = err {
+                        print(err)
+                        return
+                    }
+                    print("Success")
+                }
+
+            }
         }
     }
 
