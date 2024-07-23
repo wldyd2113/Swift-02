@@ -18,6 +18,7 @@
 		3B97DE922C4F6AE7009ED947 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE912C4F6AE7009ED947 /* Post.swift */; };
 		3B97DE942C4F6C8C009ED947 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE932C4F6C8C009ED947 /* PostViewModel.swift */; };
 		3B97DE962C4F7340009ED947 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE952C4F7340009ED947 /* PostView.swift */; };
+		3B97DE982C4F78E1009ED947 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE972C4F78E1009ED947 /* FeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3B97DE912C4F6AE7009ED947 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		3B97DE932C4F6C8C009ED947 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		3B97DE952C4F7340009ED947 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		3B97DE972C4F78E1009ED947 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				3B97DE912C4F6AE7009ED947 /* Post.swift */,
 				3B97DE932C4F6C8C009ED947 /* PostViewModel.swift */,
 				3B97DE952C4F7340009ED947 /* PostView.swift */,
+				3B97DE972C4F78E1009ED947 /* FeedView.swift */,
 				3B97DE7C2C4F67D6009ED947 /* Assets.xcassets */,
 				3B97DE862C4F68F5009ED947 /* GoogleService-Info.plist */,
 				3B97DE7E2C4F67D6009ED947 /* Preview Content */,
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B97DE982C4F78E1009ED947 /* FeedView.swift in Sources */,
 				3B97DE942C4F6C8C009ED947 /* PostViewModel.swift in Sources */,
 				3B97DE922C4F6AE7009ED947 /* Post.swift in Sources */,
 				3B97DE962C4F7340009ED947 /* PostView.swift in Sources */,
