@@ -22,6 +22,7 @@
 		3B97DE612C4F2EDA009ED947 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE602C4F2EDA009ED947 /* AuthViewModel.swift */; };
 		3B97DE632C4F2F57009ED947 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE622C4F2F57009ED947 /* HolderView.swift */; };
 		3B97DE652C4F2F72009ED947 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE642C4F2F72009ED947 /* SignUpView.swift */; };
+		3B97DE672C4F428F009ED947 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE662C4F428F009ED947 /* ResetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3B97DE602C4F2EDA009ED947 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		3B97DE622C4F2F57009ED947 /* HolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
 		3B97DE642C4F2F72009ED947 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3B97DE662C4F428F009ED947 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				373AA87B2C4DF8AA009211FF /* Note.swift */,
 				373AA87D2C4DF8F3009211FF /* NoteViewModel.swift */,
 				3B97DE602C4F2EDA009ED947 /* AuthViewModel.swift */,
+				3B97DE662C4F428F009ED947 /* ResetPasswordView.swift */,
 			);
 			path = NoteApp;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				3B97DE632C4F2F57009ED947 /* HolderView.swift in Sources */,
 				373AA8652C4DE8B2009211FF /* NoteAppApp.swift in Sources */,
 				373AA87C2C4DF8AA009211FF /* Note.swift in Sources */,
+				3B97DE672C4F428F009ED947 /* ResetPasswordView.swift in Sources */,
 				3B97DE652C4F2F72009ED947 /* SignUpView.swift in Sources */,
 				373AA8852C4E2179009211FF /* DetailsView.swift in Sources */,
 			);
