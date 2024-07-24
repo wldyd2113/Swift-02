@@ -55,6 +55,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B5C8F132C50922E0025A196 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				3B5C8F162C5092ED0025A196 /* Models */,
+				3B5C8F152C5092E00025A196 /* Views */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		3B5C8F142C5092660025A196 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				3B5C8F182C5093180025A196 /* Models */,
+				3B5C8F192C5093320025A196 /* ViewModels */,
+				3B5C8F172C50930D0025A196 /* Views */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		3B5C8F152C5092E00025A196 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B5C8F112C50803C0025A196 /* ProfileView.swift */,
+				3B97DE9C2C4F81C0009ED947 /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B5C8F162C5092ED0025A196 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B97DE9A2C4F8074009ED947 /* AuthViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B5C8F172C50930D0025A196 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B97DE972C4F78E1009ED947 /* FeedView.swift */,
+				3B97DE952C4F7340009ED947 /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B5C8F182C5093180025A196 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B97DE912C4F6AE7009ED947 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B5C8F192C5093320025A196 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3B97DE932C4F6C8C009ED947 /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		3B97DE6C2C4F67D5009ED947 = {
 			isa = PBXGroup;
 			children = (
@@ -76,13 +137,8 @@
 			children = (
 				3B97DE992C4F7F77009ED947 /* Socially.entitlements */,
 				3B97DE782C4F67D5009ED947 /* SociallyApp.swift */,
-				3B97DE912C4F6AE7009ED947 /* Post.swift */,
-				3B97DE932C4F6C8C009ED947 /* PostViewModel.swift */,
-				3B5C8F112C50803C0025A196 /* ProfileView.swift */,
-				3B97DE972C4F78E1009ED947 /* FeedView.swift */,
-				3B97DE9C2C4F81C0009ED947 /* SignUpView.swift */,
-				3B97DE952C4F7340009ED947 /* PostView.swift */,
-				3B97DE9A2C4F8074009ED947 /* AuthViewModel.swift */,
+				3B5C8F142C5092660025A196 /* Posts */,
+				3B5C8F132C50922E0025A196 /* Account */,
 				3B97DE7C2C4F67D6009ED947 /* Assets.xcassets */,
 				3B97DE862C4F68F5009ED947 /* GoogleService-Info.plist */,
 				3B97DE7E2C4F67D6009ED947 /* Preview Content */,
