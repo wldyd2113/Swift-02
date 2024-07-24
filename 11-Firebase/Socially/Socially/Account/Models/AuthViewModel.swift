@@ -10,6 +10,7 @@ import AuthenticationServices
 import FirebaseFirestore
 import CryptoKit //암호화를 지원해주는 라이브러리
 import FirebaseAuth
+import FirebaseStorage
 
 class AuthViewModel: ObservableObject {
     @Published var user: User?
@@ -19,6 +20,33 @@ class AuthViewModel: ObservableObject {
         Auth.auth().addStateDidChangeListener { [weak self] _, user in
             self?.user = user
             
+        }
+    }
+    
+    // MARK: - Profile Image
+    func uploadProfileImage(_ imageData: Data) {
+        let storageReference = Storage.storage().reference().child("\(UUID().uuidString)")
+
+        storageReference.putData(imageData, metadata: nil) { metadata, error in
+            if let error = error {
+                return
+            }
+
+            storageReference.downloadURL { url, error in
+                if let imageURL = url,
+                   let user = Auth.auth().currentUser {
+                    let changeRequest = user.createProfileChangeRequest()
+                    changeRequest.photoURL = imageURL
+                    changeRequest.commitChanges {
+                        error in
+                        if let error = error {
+                            print("\(error.localizedDescription)")
+                            return
+                        }
+                        self.user = Auth.auth().currentUser
+                    }
+                }
+            }
         }
     }
     
