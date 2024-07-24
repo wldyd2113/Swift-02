@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5C8F122C50803C0025A196 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C8F112C50803C0025A196 /* ProfileView.swift */; };
 		3B97DE792C4F67D5009ED947 /* SociallyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B97DE782C4F67D5009ED947 /* SociallyApp.swift */; };
 		3B97DE7D2C4F67D6009ED947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97DE7C2C4F67D6009ED947 /* Assets.xcassets */; };
 		3B97DE802C4F67D6009ED947 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97DE7F2C4F67D6009ED947 /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5C8F112C50803C0025A196 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3B97DE752C4F67D5009ED947 /* Socially.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socially.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B97DE782C4F67D5009ED947 /* SociallyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SociallyApp.swift; sourceTree = "<group>"; };
 		3B97DE7C2C4F67D6009ED947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				3B97DE782C4F67D5009ED947 /* SociallyApp.swift */,
 				3B97DE912C4F6AE7009ED947 /* Post.swift */,
 				3B97DE932C4F6C8C009ED947 /* PostViewModel.swift */,
+				3B5C8F112C50803C0025A196 /* ProfileView.swift */,
 				3B97DE972C4F78E1009ED947 /* FeedView.swift */,
 				3B97DE9C2C4F81C0009ED947 /* SignUpView.swift */,
 				3B97DE952C4F7340009ED947 /* PostView.swift */,
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5C8F122C50803C0025A196 /* ProfileView.swift in Sources */,
 				3B97DE982C4F78E1009ED947 /* FeedView.swift in Sources */,
 				3B97DE942C4F6C8C009ED947 /* PostViewModel.swift in Sources */,
 				3B97DE9B2C4F8074009ED947 /* AuthViewModel.swift in Sources */,
